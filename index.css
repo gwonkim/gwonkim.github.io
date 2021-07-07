@@ -1,0 +1,10 @@
+div {  
+    padding: 30px; 
+    margin: 30px auto; 
+    width: 600px;
+    border: 1px solid #ccc; 
+    box-shadow: 3px 3px 3px #aaa;
+}
+li { 
+    margin-bottom: 10px;
+}
