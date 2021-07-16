@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>PropTypes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div>
+        <h1>prop-types</h1>
+        <hr />
+        <h2>리액트에서 prop-types 사용하는 법</h2>
+        <h5>*react hooks에서 사용하는 법</h5>
+
+        <br />
+
+        <h3>propTypes 설정 방법</h3>
+        <pre>
+            Test.js
+
+            import PropTypes from 'prop-types'; // import prop-types 
+
+            const Test = ({ a }) => {
+                ...
+            };
+
+            Test.propTypes = {
+                a: PropTypes.object, // 전달될 a의 타입은 object이다.
+            };
+        </pre>
+
+        <br />
+        <h3>prop-types의 타입 종류</h3>
+        <ul>
+            <li>optionalArray: PropTypes.array 배열</i>
+            <li>optionalBool: PropTypes.bool 불값</li>
+            <li>optionalFunc: PropTypes.func 함수</li>
+            <li>optionalNumber: PropTypes.number 숫자</li>
+            <li>optionalObject: PropTypes.object 객체</li>
+            <li>optionalString: PropTypes.string 문자열</li>
+            <li>optionalSymbol: PropTypes.symbol 심볼</li>
+            <li>optionalAny: PropTypes.any 모든 데이터 타입 가능</li>
+        </ul>
+
+        <br />
+
+        <h3>props의 초기값 정의</h3>
+        <pre>
+            a.defaultProps = {
+                name: 'jiwon'
+            };
+        </pre>
+
+        <br />
+
+        <h3>props의 필수사항 설정</h3>
+        <h5>*설정한 값이 전달되지 않았을 때 콘솔에서 경고 뜸.</h5>
+        <pre>
+            방법 1 (일부만 필수인 경우)
+            a.propTypes = {
+                a: PropTypes.object.isRequired,
+                b: PropTypes.array,
+            };
+
+            방법2 (여러 개가 필수인 경우)
+            a.propTypes = {
+                a: PropTypes.object,
+                b: PropTypes.array,
+            }.isRequired;
+        </pre>
+
+        <br />
+
+        <h3>props 특정 설정(객체 등)</h3>
+        <pre>
+            (객체의 각각의 내부 값 타입 설정)
+            aObject: PropTypes.shape({
+                name: PropTypes.string,
+                age: PropTypes.number
+            }), 
+
+            (특정 값을 갖는 배열)
+            aArrayOf: PropTypes.arrayOf(PropTypes.number),
+
+            (특정 값을 갖는 객체)
+            aObjectOf: PropTypes.objectOf(PropTypes.number),
+
+        </pre>
+
+        <br />
+
+        <hr />
+        <h2>참고 사이트</h2>
+        <li><a href="https://ko.reactjs.org/docs/typechecking-with-proptypes.html">react공식 사이트 : prop-types</a></li>
+    </div>
+
+</body>
+
+</html>
