@@ -25,3 +25,7 @@ table, th, td {
     padding: 3px;
 }
 
+img {
+    width: 500px;
+    margin: auto;
+}
