@@ -10,11 +10,60 @@
     <div>
         <h1>git</h1>
         <hr />
+        <h3>Git이란?</h3>
+        <p>
+            소스 관리를 위한 분산 버전 관리 시스템(리눅스 토발즈가 개발)<br />
+            코드 버전 관리함. <br />
+            협업 시 필수 요소 <br />
+        </p>
+
         <h3>깃 명령어</h3>
         <p>
-        푸시 : git push
-        풀 : git pull
-        깃 브랜치 확인 : git branch, *(별)표시가 현재 브랜치 
+            버전 확인 : git --version <br />
+            <br />
+            깃 클론 생성 : git clone url(ex: https://github.com/ooooo.git)<br />
+            <br />
+            ADD COMMIT PUSH PULL 
+            <br />
+            <br />
+            <b>Commit</b><br />
+            commit의 상태<br />
+            - uncommit : 커밋 안 한 상태(코드만 변경)<br />
+            - staying :  add한 상태(commit하기 위해 올려놓기)<br />
+            - commit : 변경사항 확정<br />
+            <br />
+            Add : git add 수정코드패스(ex: git add pages/index.html)<br />
+            Commint : git commit -m “내용”(ex: git commit -m "index.js 클릭 버그 수정")<br />
+            <br />
+            <br />
+            <b>Commit reset</b><br />
+            : git reset(add한 파일 취소)<br />
+            : git reset merge(머지한 코드 취소)<br />
+            <br />
+            <br />
+            <b>Stash</b><br />
+            : git stash(코드 임시 저장, stash 영역에 잠시 저장)<br />
+            : git stash pop(마지막에 저장한 코드 불러오기)<br />
+            : git stash list(stash의 목록 확인)<br />
+            <br />
+            <br />
+            <b>Push</b><br />
+            : git push<br />
+            [pull vs fetch]<br />
+            - 풀 : git pull(git서버에서 최신 코드 받아와 merge 하기)<br />
+            - 패치 : git fetch(git서버에서 최신 코드만 받아옴)<br />
+            <br />
+            pull(merge O, 즉시 반영O - 충돌 발생 가능)<br />
+            fetch(merge X, 즉시 반영X)<br />
+            <br />
+            <br />
+            <b>Merge</b><br />
+            : git merge branchName1 branchName2(합칠 브랜치의 이름 2개)<br />
+            <br />
+            <br />
+            <b>Branch</b>
+            깃 브랜치 확인 : git branch, *(별)표시가 현재 브랜치 <br />
+            깃 브랜치 체크아웃 : git checkout branchName<br />
         </p>
         <h3>깃 페이지</h3>
         <p>
