@@ -7,10 +7,10 @@
     <link rel="stylesheet" type="text/css" href="/css/pages.css">
 </head>
 <body>
-    <div class="index2">
+    <div class="index">
         <h1>GIT : repository</h1>
         <hr />
-        <h3>state : 상태</h3>
+        <h2>‖> state : 상태</h2>
         <ul>
             git repository<br />
             - git repository는 소스코드 파일의 수정 과정에서 만들어진 전체 버전이 전부 저장됨.<br />
@@ -24,16 +24,51 @@
         </ul>
         <br />
         <h3>1. local repository</h3>
-        <p>
+        <ul>
             - 개인 PC에 생성되는 개인 전용 repository
             - 각자의 PC의 local repository에서 버전 관리 및 작업을 하다가 공유해야 할 때 remote repository에 업로드 
-        </p>
+        </ul>
         <h3>2. remote repository</h3>
-        <p>
+        <ul>
             - 팀원끼리 공유되는 repository<br />
             - 팀원 모두 접근할 수 있는 remote 서버에 만들어짐.<br />
             - ex) github
-        </p>
+        </ul>
+        <br />
+        <h2>‖> local repository와 remote repository 연결 명령어</h2>
+        <ul>
+            <h4>-> 내 pc에 local repository 만드는 법</h4>
+            <ol type="1">
+                <li>
+                    <b>대상 폴더에 git 설치</b><br />
+                    - git init
+                </li>
+                <li>
+                    <b>remote repository 연결</b><br />
+                    - git remote add origin git_URL(ex: git remote add https://github.com/test/test.git)
+                </li>
+                <li>
+                    <b>git remote 연결 확인</b><br />
+                    - git remote -v
+                </li>
+                <li>
+                    <b>최초 업로드(push)</b><br />
+                    - git push -u origin main(맨 처음)<br />
+                    - git push(이후)
+                </li>
+                <li>
+                    <b>Branch 이름 변경</b><br />
+                    *git 기본 브랜치의 이름이 main이 아니고 master인 경우 main으로 변경하는 코드<br />
+                    *생략 가능
+                    - git branch -M main
+                </li>
+            </ol>
+            <br />
+            <h4>-> Clone 만드는 법</h4>
+            <ul>
+                <li>git clone git_URL(ex: git clone https://github.com/test/test.git)</li>
+            </ul>
+        </ul>
     </div>
     
 </body>
