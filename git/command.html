@@ -57,6 +57,7 @@
             <br />
             pull(merge O, 즉시 반영O - 충돌 발생 가능)<br />
             fetch(merge X, 즉시 반영X)<br />
+            - git fetch(다운로드)
             <br />
             <br />
 
@@ -67,7 +68,16 @@
 
             <b>Branch</b>
             깃 브랜치 확인 : git branch, *(별)표시가 현재 브랜치 <br />
-            깃 브랜치 체크아웃 : git checkout branchName<br />
+            Checkout<br />
+            <ul>
+                <li>git checkout branchName</li>
+                <li>
+                    local repository에서 remote repository의 브랜치로 체크아웃<br />
+                    (맨 처음만 해당, 이후에는 git checkout)<br />
+                    : git checkout -t branchName(t: remote)
+                </li>
+            </ul>
+            
             <br />
             <br />
 
