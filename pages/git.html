@@ -6,11 +6,53 @@
     <title>GIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/pages.css">
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+    <script type="text/javascript" src="/git/git.js"></script>
 </head>
 
 <body>
     <div class="index">
         <h1>GIT</h1>
+        <div class="listDropdown memu">
+            <div onclick="clickList()" class="dropbtn tooltip">
+                목록보기
+                <span class="tooltipText">클릭하면 목록이 보입니다.</span>
+            </div>
+            <div id="dropdown" class="dropdown-content">
+                <li class="tooltip">
+                    <a href="/git/state.html">State</a>
+                    <span class="tooltipText">클릭하면 State페이지로 이동합니다.</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/git/repository.html">Repository</a>
+                    <span class="tooltipText">클릭하면 Repository페이지로 이동합니다.</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/git/merge.html">Merge</a>
+                    <span class="tooltipText">클릭하면 Merge페이지로 이동합니다.</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/git/gitPage.html">Git Page</a>
+                    <span class="tooltipText">클릭하면 Git Page페이지로 이동합니다.</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/git/branch.html">branch</a>
+                    <span class="tooltipText">클릭하면 branch페이지로 이동합니다.</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/git/commit.html">commit</a>
+                    <span class="tooltipText">클릭하면 commit페이지로 이동합니다.</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/git/command.html">Command</a>
+                    <span class="tooltipText">클릭하면 Command페이지로 이동합니다.</span>
+                </li>
+                <li class="tooltip">
+                    <a href="/pages/aws.html">aws의 우분투 접속</a>
+                    <span class="tooltipText">클릭하면 aws페이지로 이동합니다.</span>
+                </li>
+            </div>
+        </div>
         <hr />
         <h3>Git이란?</h3>
         <p>
@@ -23,24 +65,18 @@
 
         <h4>CLI vs GUI</h4>
         <ul>
-            <li>
-                CLI: Command Line Interface<br />
-                -> cmd/terminal/shell에서 명령을 입력하는 사용자 인터페이스<br />
-            </li>
-            <li>
-                GUI: Graphic User Interface<br />
-                -> 메뉴나 버튼을 클릭하여 명령을 입력하는 사용자 인터페이스<br />
-            </li>
+           <li>
+               CLI: Command Line Interface<br />
+               -> cmd/terminal/shell에서 명령을 입력하는 사용자 인터페이스<br />
+           </li>
+           <li>
+               GUI: Graphic User Interface<br />
+               -> 메뉴나 버튼을 클릭하여 명령을 입력하는 사용자 인터페이스<br />
+            </li> 
         </ul>
         <br />
         <br />
-        <li><a href="/git/state.html">State</a></li>
-        <li><a href="/git/repository.html">Repository</a></li>
-        <li><a href="/git/merge.html">Merge</a></li>
-        <li><a href="/git/gitPage.html">Git Page</a></li>
-        <li><a href="/git/branch.html">branch</a></li>
-        <li><a href="/git/commit.html">commit</a></li>
-        <li><a href="/git/command.html">Command</a></li>
+        
 </body>
 
 </html>
