@@ -45,7 +45,7 @@ a {
 .tooltip {
     position: relative;
     display: inline-block;
-  }
+}
   
 .tooltip .tooltipText {
     visibility: hidden;
@@ -65,8 +65,4 @@ a {
   
 .tooltip:hover .tooltipText {
     visibility: visible;
-}
-
-.listTooltipChecked {
-    visibility: hidden;
 }
