@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Regular Expression</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/pages.css">
+    <link rel="stylesheet" type="text/css" href="/css/regExp.css">
+</head>
+
+<body>
+    <div class="index">
+        <h1>Regular Expression</h1>
+        <p>정규표현식 이론 정리</p>
+        <br />
+        <hr />
+       
+        <h2>특수문자</h2>
+        <ul>
+            <li>
+                <span class="title">[ ]</span><br />
+                <p>: 괄호 안의 문자 중 일치하는 한 문자</p>
+                <div class="ex">
+                    Bloc[Kk] => BlocK or Block<br />
+                    0x[0-9A-F][0-9A-F] => 0x2F, 0xEA 등
+                </div>
+            </li>
+            <li>
+                <span class="title">. <span style="font-size: 15px;">(점, dot)</span></span><br />
+                <p>: 앞의 정규식과 일치하는 한 문자</p>
+                <div class="ex">
+                   A.C => A5C, ABC 등<br />
+                   D..G => DEFG, DegG, D@!G 등
+                </div>
+            </li>
+            <li>
+                <span class="title">[^ ]</span><br />
+                <p>: 괄호 안의 문자를 제외한 모든 문자열 중에서 일치하는 한 문자</p>
+                <div class="ex">
+                    [^Tt]he => Ahe, #he<br />
+                    [^0-9][a-f] => FG, AC, g3 등
+                 </div>
+            </li>
+            <li>
+                <span class="title">?</span><br />
+                <p>: 앞의 정규식과 일치하는 0 ~ 1개의 문자</p>
+                <div class="ex">
+                   AB?C => ABC, AC<br />
+                   A[b-g]?C => AC, AeC 등
+                 </div>
+            </li>
+            <li>
+                <span class="title">*</span><br />
+                <p>: 앞의 정규식과 일치하는 0개 이상의 문자</p>
+                <div class="ex">
+                    AB*C => AC, ABC, ABBBBBBBC 등<br />
+                    D[A-Z]*G => DEFG, DEEEEEVG, DG 등
+                 </div>
+            </li>
+            <li>
+                <span class="title">+</span><br />
+                <p>: 앞의 정규식과 일치하는 1개 이상의 문자</p>
+                <div class="ex">
+                    AB+C => ABC, ABBBBBBBC 등<br />
+                    D[A-Z]+G => DAG, DEFG, DEEEEEVG 등
+                </div>
+            </li>
+            <li>
+                <span class="title">^</span><br />
+                <p>: 각 줄의 선두 부분에서 일치하는 문자열</p>
+                <div class="ex">
+                    ^123 => 선두 부분에 있는 123 문자열과 일치. 줄의 선두가 아니면 일치 X.
+                </div>
+            </li>
+            <li>
+                <span class="title">$</span><br />
+                <p>: 각 줄의 후두 부분에서 일치하는 문자</p>
+                <div class="ex">
+                    ABCD$ => 후두 부분에 있는 ABCD 문자열과 일치. 후두 부분이 아니면 일치 X.
+                </div>
+            </li>
+            <li>
+                <span class="title">|</span><br />
+                <p>:앞뒤 정규식 중 하나 일치(OR)</p>
+                <div class="ex">
+                    Ab|cD => AbD, AcD<br />
+                    (이 경우 A[bc]D 정규식과 동일.)<br />
+                    A(and)|(of)D => AandD, AofD
+                </div>
+            </li>
+            <li>
+                <span class="title">()</span><br />
+                <p>: 괄호 안의 정규식을 묶는 역할</p>
+                <div class="ex">
+                    A(BC)?D => ABCD, AD<br />
+                    A([a-x][0-3]){3}F => Aa0x1a2F, Ax0a2d2F 등
+                </div>
+            </li>
+            <li>
+                <span class="title">￦</span><br />
+                <p>: 특수 문자를 보통 문자로 취급할 수 있게 하는 역할</p>
+                <div class="ex">
+                    ￦([1-9][0-9]*￦)=> (1), (1000), (99999) 등<br />
+                    [￦t] => 탭 문자, 공백 문자와 일치
+                    [￦t]+ => 탭 문자, 공백 문자가 1개 이상 반복된 것과 일치<br />
+                    (탭탭탭, 공백탭탭탭공백, 탭, 공백, 탭공백탭 등 1개 이상 포함 시 ok)
+                </div>
+            </li>
+            <li>
+                <span class="title">{n}</span><br />
+                <p>
+                    : n = number(반드시 1개의 숫자가 입력되어야 함.)<br />
+                    : 앞의 정규식과 일치하는 문자가 n번 반복
+                </p>
+                <div class="ex">
+                    A[0-9]{2} => A43, A03, A12 등 
+                   [0-9]{6}-[1234][0-9]{6} => 주민등록번호 000012-3000555 등
+                </div>
+            </li>
+            <li>
+                <span class="title">{n, m}</span><br />
+                <p>
+                    : n = number(2개의 숫자가 입력되어야 함.)<br />
+                    : 앞의 정규식과 일치하는 문자가 n보다 크거나 같고 m보다 작거나 같게 반복<br />
+                    : n ≤ x ≤ m
+                </p>
+                <div class="ex">
+                    A[0-9]{2, 6} => A43, A0333, A111333 등<br />
+                    0[2-9][0-9]?-[0-9]{3,4}-[0-9]{4} => 전화번호 02-2000-4444, 010-0123-4567 등
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
