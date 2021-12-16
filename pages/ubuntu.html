@@ -12,6 +12,31 @@
         <h1> UBUNTU</h1>
         <hr />
         
+        <p>EC2 진입</p>
+        <ul>
+            <li>
+                SSH 연결<br />
+                : ssh -i keyOrPemFile ubuntu@퍼블릭IP<br />
+                : ssh -i keyOrPemFile ubuntu@도메인네임<br />
+            </li>
+            <li>
+                연결 종료<br />
+                : exit
+            </li>
+            <li>
+                패키지 관련 명령(데몬)<br />
+                패키지 업데이트<br />
+                설치된 패키지 업데이트 항목 다운 : sudo apt update<br />
+                설치된 패키지 업그레이드 : sudo apt upgrade<br />
+                <br />
+                설치 : sudo apt install 패키지명<br />
+                삭제 : sudo apt remove 패키지명<br />
+                상태 확인 : service apt status 패키지명<br />
+                종료 : sudo service apt stop 패키지명<br />
+                재시작 : sudo service apt restart 패키지명<br />
+
+            </li>
+        </ul>
     </div>
     
 </body>
