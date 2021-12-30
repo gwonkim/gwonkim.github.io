@@ -58,7 +58,41 @@
             </li>
         </ul>
 
-        
+        <p>mysql root 계정 활성화</p>
+        <ul>
+            <li>
+                sudo mysql -u root
+            </li>
+            <li>
+                USE mysql;
+            </li>
+            <li>
+                UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+            </li>
+            <li>
+                FLUSH PRIVILEGES;
+            </li>
+            <li>
+                exit;
+            </li>
+        </ul>
+
+        <p>비밀번호 설정</p>
+        <ul>
+            <li>
+                신규 등록 : mysqladmin -u root password<br />
+                *비밀번호 보안 상 입력 상태가 보이지 않음. 틀릴 경우 다시 명령 실행이 좋음.
+            </li>
+            <li>
+                변경 : mysqladmin -u root -p password<br />
+                *비밀번호 보안 상 입력 상태가 보이지 않음. 틀릴 경우 다시 명령 실행이 좋음.
+            </li>
+        </ul>
+
+        <p>MySQL 워크벤치 연결</p>
+        <ul>
+            
+        </ul>
     </div>
 
 </body>
