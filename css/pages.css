@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(to top, #4a5a4d, #2c332e);
-    font-family: sans-serif;
+    font-size: 20px;
+    font-family: 'NanumBarunGothic', 'serif';
+    line-height: 40px;
 }
 
 .index {
@@ -22,7 +24,8 @@ body {
 }
 
 li {
-    margin-bottom: 5px;
+    margin: 20px;
+    font-size: 22px;
 }
 
 a {

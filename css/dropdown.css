@@ -49,8 +49,8 @@ a {
   
 .tooltip .tooltipText {
     visibility: hidden;
-    font-size: 15px;
-    width: 200px;
+    font-size: 20px;
+    width: auto;
     background-color: black;
     color: #fff;
     text-align: center;
