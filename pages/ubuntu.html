@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>UBUNTU</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/pages.css">
-    <link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="/css/box.css">
 </head>
+
 <body>
-    <div class="index2">
-        <h1> UBUNTU</h1>
+    <div class="index">
+        <h1> UBUNTU 우분투</h1>
         <hr />
-        
-        <p>EC2 진입</p>
+
+        <h2>EC2 진입</h2>
         <ul>
             <li>
                 SSH 연결<br />
@@ -23,26 +25,46 @@
                 연결 종료<br />
                 : exit
             </li>
+        </ul>
+
+       <h2>패키지 관련 명령(데몬)</h2>
+        <ul>
+            <h3>패키지 업데이트</h3>
             <li>
-                패키지 관련 명령(데몬)<br />
-                패키지 업데이트<br />
                 설치된 패키지 업데이트 항목 다운 : sudo apt update<br />
                 설치된 패키지 업그레이드 : sudo apt upgrade<br />
-                <br />
+            </li>
+            <h3>패키지 설치 및 상태 변경</h3>
+            <li>
                 설치 : sudo apt install 패키지명<br />
                 삭제 : sudo apt remove 패키지명<br />
                 상태 확인 : service apt status 패키지명<br />
                 종료 : sudo service apt stop 패키지명<br />
                 재시작 : sudo service apt restart 패키지명<br />
-
-            </li>
-            <li>
-                현재 시각 출력 : date<br />
-                *기본 타임존 미국<br />
-                타임존 서울 변경 : sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime<br />
             </li>
         </ul>
+
+        <br />
+        <hr />
+        <br />
+
+        <div class="box">
+            <h3 class="title">☞ 우분투에서 설정 및 설치 ☜</h3>
+            <div class="tooltip">
+                <a href="/ubuntu/time.html">한국 시간으로 설정하기</a>
+                <span class="tooltipText">클릭하면 기초 페이지로 넘어갑니다.</span>
+            </div>
+            <div class="tooltip">
+                <a href="/ubuntu/mysql.html">MySQL 서버 설치하기</a>
+                <span class="tooltipText">클릭하면 명령어 페이지로 넘어갑니다.</span>
+            </div>
+            <div class="tooltip">
+                <a href="/ubuntu/swap.html">Swap 설정하기</a>
+                <span class="tooltipText">클릭하면 기초 페이지로 넘어갑니다.</span>
+            </div>
+        </div>
     </div>
-    
+
 </body>
+
 </html>
