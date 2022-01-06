@@ -18,7 +18,7 @@
     <div class="index">
         <h2>MySQL 설치</h2>
         <hr />
-        <p>설치 전 패키지 업데이트</p>
+        <h2>설치 전 패키지 업데이트</h2>
         <ul>
             <li>
                 패키지 정보 업데이트 : sudo apt updata
@@ -27,8 +27,10 @@
                 패키지 정보 업그레이드 : sudo apt upgrade
             </li>
         </ul>
+        <br />
+        
 
-        <p>mysql 서버 작동 명령</p>
+        <h2>mysql 서버 작동 명령</h2>
         <ul>
             <li>
                 상태확인 : sudo service mysql status
@@ -43,8 +45,10 @@
                 종료 : sudo service mysql stop
             </li>
         </ul>
+        <br />
+        
 
-        <p>ubuntu에서 mysql 설치 및 관리</p>
+        <h2>ubuntu에서 mysql 설치 및 관리</h2>
         <ul>
             <li>
                 mySQL 서버 설치 : sudo apt install mysql-server
@@ -57,8 +61,10 @@
                 실행 상태가 아니면 실행 시작 : sudo service mysql start
             </li>
         </ul>
+        <br />
+        
 
-        <p>mysql root 계정 활성화</p>
+        <h2>mysql root 계정 활성화</h2>
         <ul>
             <li>
                 sudo mysql -u root
@@ -76,8 +82,10 @@
                 exit;
             </li>
         </ul>
+        <br />
+        
 
-        <p>비밀번호 설정</p>
+        <h2>비밀번호 설정</h2>
         <ul>
             <li>
                 신규 등록 : mysqladmin -u root password<br />
@@ -88,11 +96,31 @@
                 *비밀번호 보안 상 입력 상태가 보이지 않음. 틀릴 경우 다시 명령 실행이 좋음.
             </li>
         </ul>
+        <br />
 
-        <p>MySQL 워크벤치 연결</p>
-        <ul>
-            
-        </ul>
+        <h2>MySQL 백업과 복구</h2>
+        <h3>백업1</h3>
+        <pre>
+        mysqldump -u root -p --databases 데이터베이스이름  > 데이터베이스저장이름.sql
+        ☞ department에 대한 복구 SQL 명령 데이터를 출력 리다이렉트(>)를 통해 sql 파일 형태로 저장
+        
+        &lt;예시&gt;
+        department.sql 백업
+        $ mysqldump -u root -p --databases department > department.sql
+        </pre>
+        <br />
+
+        <h3>백업2</h3>
+        <pre>
+        mysqldump -u root -p --databases 데이터베이스이름 | gzip > 데이터베이스저장이름.sql.gz
+        ☞ department의 복구 SQL 명령 데이터를 출력 리다이렉트(>)를 통해 sql 파일을 압축한 형태로 저장
+        
+        &lt;예시&gt;
+        department.sql 백업
+        $ mysqldump -u root -p --databases department | gzip > department.sql.gz
+        </pre>
+        <br />
+
     </div>
 
 </body>
