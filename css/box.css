@@ -11,6 +11,27 @@
     display: block;
 }
 
+.box2 {
+    background: linear-gradient(to bottom, #90a794,  #778a7b);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 15px 30px;
+    margin: 20px 0px;
+    border-radius: 15px; 
+    max-width: 1000px;
+    min-width: 600px;
+    color: black;
+    height: auto;
+    display: block;
+    font-size: 20px;
+}
+
+.highlight {
+    background-color: #b6ccbb;
+    padding: 4px 15px;
+    border-radius: 10px;
+    
+}
+
 .title {
     margin: 10px;
 }
