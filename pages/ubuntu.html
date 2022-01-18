@@ -13,7 +13,6 @@
     <div class="index">
         <h1> UBUNTU 우분투</h1>
         <hr />
-
         <h2>EC2 진입</h2>
         <ul>
             <li>
@@ -26,8 +25,9 @@
                 : exit
             </li>
         </ul>
+        <br />
 
-       <h2>패키지 관련 명령(데몬)</h2>
+        <h2>패키지 관련 명령(데몬)</h2>
         <ul>
             <h3>패키지 업데이트</h3>
             <li>
@@ -41,6 +41,35 @@
                 상태 확인 : service apt status 패키지명<br />
                 종료 : sudo service apt stop 패키지명<br />
                 재시작 : sudo service apt restart 패키지명<br />
+            </li>
+        </ul>
+        <br />
+
+        <h2>파일 다운로드 및 업로드</h2>
+        <ul>
+            <li>
+                다운로드<br />
+                : EC2 서버에 있는 파일을 내 PC로 다운로드<br />
+                : scp -i 키파일.pem  ubuntu@IP주소:우툰부파일위치주소  내PC주소<br />
+                <div class="box2">
+                    예시) scp -i 키파일.pem  ubuntu@IP주소:~/department.sql.gz  ~<br />
+                    (우분투EC2 서버의 ~/department.sql.gz를 내 PC의 홈디렉토리(~)로 다운로드)<br />
+                    : 현재 디렉토리 다운로드하고 싶다면 . 문자 사용<br />
+                    : 문서 폴더로 다운로드하고 싶다면 ~/Documents 사용
+                </div>
+            </li>
+            <li>
+                업로드<br />
+                : 내 PC에 있는 파일을 EC2 서버로 다운로드<br />
+                : scp -i 키파일.pem  내pc파일위치주소  ubuntu@IP주소:~<br />
+                <div class="box2">
+                    <div class="highlight">
+                        예시) scp -i 키파일.pem  ~/department.sql.gz  ubuntu@IP주소:~<br />
+                    </div>
+                    (내 pc의 홈디렉토리(~)에 있는 department.sql.gz를 우분투 EC2서버의 홈디렉토리(~)로 다운로드)<br />
+                    : 현재 디렉토리 다운로드하고 싶다면 . 문자 사용<br />
+                    : 문서 폴더로 다운로드하고 싶다면 ~/Documents 사용
+                </div>
             </li>
         </ul>
 
