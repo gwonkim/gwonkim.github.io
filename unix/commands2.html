@@ -1,28 +1,73 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <title>기본 명령어</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/pages.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="gwonkim의 github.io" />
     <meta property="og:url" content="http://gwonkim.github.io/OGTag.html" />
-    <meta property="og:description" content="이곳은 gwonkim의 깃헙 페이지입니다." />
-    <style>
+    <meta
+      property="og:description"
+      content="이곳은 gwonkim의 깃헙 페이지입니다."
+    />
+    <link rel="stylesheet" type="text/css" href="/css/pages.css" />
+    <link rel="stylesheet" type="text/css" href="/css/regExp.css" />
+    <link rel="stylesheet" type="text/css" href="/css/dropdown.css" />
+  </head>
 
-    </style>
-</head>
-
-<body>
-    <div class="index2">
-        <h1>유닉스</h1>
-        <h3>기본 명령어</h3>
-        <hr />
-        <h2>unix 명령어 정리</h2>
-
+  <body>
+    <div class="index">
+      <h1>유닉스</h1>
+      <h3>기본 명령어</h3>
+      <hr />
+      <h2>표준 입력과 표준 출력</h2>
+      <ul>
+        <li>표준 입력과 출력</li>
+        <li>
+          : java와 같은 언어에서 입력을 받을 때<br />
+          &nbsp;&nbsp;System.in 객체를 이용하고, 출력할 때 System.out 객체를
+          사용<br />
+          &nbsp;&nbsp;이 입력과 출력을 표준 입력, 표준 출력이라고 함.<br />
+          &nbsp;&nbsp;ex) System.out.print("Hello World!");
+        </li>
+      </ul>
+      <br />
+      <h2>Redirection</h2>
+      <ul>
+        <li>
+          redirection<br />
+          : <span class="title2">&lt; or &gt;</span><br />
+          : 표준 입력과 표준 출력의 방향을 변경 가능.<br />
+        </li>
+        <li>
+          ex) ls > list.txt<br />
+          ls 명령의 출력이 화면으로 출력되지 않고 list.txt 파일에 저장.<br />
+          (list.txt 파일이 존재한다면 덮어쓰고 없으면 새로 생성.)
+        </li>
+      </ul>
+      <h2>Pipe</h2>
+      <ul>
+        <li>
+          pipe<br />
+          : <span class="title2">|</span><br />
+          : 이전 명령의 출력이 그 다음 명령의 입력으로 파이프처럼 연결.<br />
+          : 입출력 연결하는 것 pipe<br />
+        </li>
+        <li>
+          ex) ls -l | gzip > list.txt.gz<br />
+          (ls -l 명령의 출력을 gzip의 입력으로 넘겨 압축한 출력 데이터를
+          list.txt.gz에 저장)
+        </li>
+      </ul>
+      <h2>Filter</h2>
+      <li>
+        filter<br />
+        : 파이트 방식으로 연결해 사용하는 것이 주 목적인 명령<br />
+      </li>
+      <li class="tooltip">
+        ☞&nbsp;&nbsp;<a href="/unix/filter.html">filter 명령어 바로가기</a>
+        <span class="tooltipText">클릭 시 Filter 페이지로 넘어갑니다.</span>
+      </li>
     </div>
-
-</body>
-
+  </body>
 </html>
