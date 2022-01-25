@@ -3,16 +3,15 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Error : 에러</title>
+    <title>Error : Http error</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/pages.css">
 </head>
 
 <body>
     <div class="index">
-        <h1>Error</h1>
-        <h3>개발할 때 발생한 에러 로그</h3>
-        <hr />
+        <h1>Http Error</h1>
+        <h3>api 연결할 때 발생한 에러 로그</h3>
         <hr />
         <br />
         <div>
@@ -30,7 +29,6 @@
             &lt;문제 해결&gt;<br />
             post를 get으로 수정(*내 경우)
         </div> 
-
         <br />
 
         <div>
@@ -54,25 +52,8 @@
             {} 빈 객체를 보내볼 것 <br />
             body가 null일 경우 415가 뜰 수도 있음. <br />
             가끔 data가 없어서 에러가 생기는 경우가 있음.<br />
-         </div>
-         
+         </div>         
          <br />
-
-         <div>
-         <h2>JavaScript_heap_out_of_memory </h2>
-         <hr />
-         <img src="./images/heapErr.png" />
-            &lt;문제 발생&gt;<br />
-            npm run dev를 통해 실행하던 중 터미널에서 위 경고창 등장 <br />
-            구글링을 통해 메모리부족 문제라고 파악했으나 메모리 문제가 아니었음. <br />
-            나의 경우 컴포넌트의 오류<br />
-            <br />
-            <br />
-            &lt;문제 해결&gt;<br />
-            컴포넌트를 조금씩 지워서 문제인 컴포넌트를 확인 후 수정(*내 경우)<br />
-         </div> 
-        <br />
-        
     </div>
 
 </body>
