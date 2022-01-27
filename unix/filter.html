@@ -8,6 +8,7 @@
     <meta property="og:title" content="gwonkim의 github.io" />
     <meta property="og:url" content="http://gwonkim.github.io/OGTag.html" />
     <link rel="stylesheet" type="text/css" href="/css/pages.css" />
+    <link rel="stylesheet" type="text/css" href="/css/regExp.css" />
     <meta
     property="og:description"
     content="이곳은 gwonkim의 깃헙 페이지입니다."
@@ -15,11 +16,39 @@
   </head>
 
   <body>
-    <div class="index2">
+    <div class="index">
       <h1>Filter</h1>
       <h3>필터 명령어</h3>
       <hr />
-
+      <ul>
+        <li>
+          <span class="title2">wc</span><br />
+            : Word Count<br />
+            : 파일의 내용의 줄, 단어, 크기를 출력하는 명령어<br />
+            : wc 파일명<br />
+            : 옵션) -l(줄 수), -w(단어 수), -c(byte 수)<br />
+            : ex) wc -l list.txt(list.txt의 줄 수만 출력)<br />
+            : ex) ls | wc -l <br />
+            (현재 디렉토리의 파일 목록을 출력 후 출력된 목록의 줄 수 출력 = 현재 디렉터리의 파일 수 출력)
+        </li>
+        <li>
+          <span class="title2">find</span><br />
+          : 하위 디렉토리들에서 특정 파일을 찾는 명령<br />
+          : 옵션 -name(이름), -o(OR), -size + OR - 숫자, -type d OR f<br />
+          : ex) find  .  -name "*.java" -o -name "*.jsp" -o -size -2K<br />
+          (현재 디렉토리 중 파일 확장자가 java나 jsp이거나 파일크기가 2k이하인 파일 찾기)<br />
+          : ex) find . -type d(현재 디렉토리 아래에서 디렉토리의 경로명 출력)
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   </body>
 </html>
