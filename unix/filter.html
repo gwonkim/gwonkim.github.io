@@ -39,12 +39,25 @@
           (현재 디렉토리 중 파일 확장자가 java나 jsp이거나 파일크기가 2k이하인 파일 찾기)<br />
           : ex) find . -type d(현재 디렉토리 아래에서 디렉토리의 경로명 출력)
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <span class="title2">xargs</span><br />
+          : 이전 데이터의 목록을 각각 다음 명령 실행<br />
+          : ex) find src -name "*.java" | wc -l <br />
+          (src 디렉토리 아래의 *.java 파일의 경로명을 출력하고<br />
+          표준 입력에서 입력된 목록의 줄 수 출력<br />
+          => src 폴더 아래의 *.java 파일의 수를 출력)<br />
+          <br />
+          : ex) find src -name "*.java" | xargs wc -l <br />
+          (src 디렉토리 아래의 *.java 파일의 경로명을 출력하고<br />
+          표준 입력에서 입력된 목록의 각각 파일의 줄 수 출력<br />
+          => src 폴더 아래의 *.java 파일 별의 줄 수 출력)
+        </li>
+        <li>
+          <span class="title2">head</span><br />
+          : 입력에서 선두 몇 줄만 출력<br />
+          : ex) head -n 10 test.java<br />
+          (test.java 파일의 선두 10줄 출력)
+        </li>
         <li></li>
         <li></li>
         <li></li>
