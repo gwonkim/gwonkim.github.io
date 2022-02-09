@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zip</title>
+    <meta property="og:title" content="gwonkim의 github.io" />
+    <meta property="og:url" content="http://gwonkim.github.io/OGTag.html" />
+    <link rel="stylesheet" type="text/css" href="/css/pages.css" />
+    <link rel="stylesheet" type="text/css" href="/css/regExp.css" />
+    <meta
+    property="og:description"
+    content="이곳은 gwonkim의 깃헙 페이지입니다."
+    />
+  </head>
+
+  <body>
+    <div class="index">
+      <h1>압축 : ZIP</h1>
+      <h3>압축 명령어</h3>
+      <hr />
+      <p>
+        zip 압축 알고리즘은 완전히 무료가 아니라서 GNU 프로젝트에서 제작한 압축 알고리즘 gzip 사용
+      </p>
+      <ul>
+        <li>
+          gzip<br />
+          : 파일 한 개씩 따로 압축하는 명령어
+        </li>
+        <li>
+          tar<br />
+          : 디렉토리나 여러 파일 묶어서 압축하는 명령어
+        </li>
+      </ul>
+
+      <h2>gzip</h2>
+      <ul>
+        <li>
+          압축하기 : gzip 파일명 => 파일명.gz
+        </li>
+        <li>
+          압축풀기 : gunzip list.txt.gz
+        </li>
+        <li>
+          주의사항 및 제약<br />
+          : gzip의 경우 압축하거나 압축 풀 때 원본이 삭제됨.<br />
+          : 파일 한 개씩 따로 압축 파일 생성<br />
+          : 여러 파일을 묶어서 압축 불가능(디렉토리 압축 불가능)<br />
+        </li>
+      </ul>
+      <br />
+
+      <h2>tar</h2>
+      <ul>
+        <li>
+          압축하기
+          <ol type="1">
+            <li>
+              tar -cvzf 압축파일명.tgz  파일1 파일2 파일3 
+            </li>
+            <li>
+              tar -cvzf 압축명.tgz  디렉토리
+            </li>
+          </ol>
+        </li>
+        <li>
+          압축풀기<br />
+          : tar -xvf 압축명.tgz
+        </li>
+        <li>
+          주의사항 및 제약<br />
+          : 디렉토리나 여러 파일을 묶어 압축할 때 사용
+        </li>
+      </ul>
+      <br />
+
+      <h2>활용 방법</h2>
+      <li>
+        특정 파일을 찾아 압축하기
+      </li>
+      <li>
+        find src -name "*.js" | xargs tar -cvzf src.tgz
+      </li>
+    </div>
+  </body>
+</html>
