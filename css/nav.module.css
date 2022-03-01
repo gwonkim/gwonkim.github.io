@@ -1,8 +1,10 @@
-.bbody {
-    background: linear-gradient(to top, #4a5a4d, #252b27);
-    font-size: 20px;
-    font-family: sans-serif;
+.nav > a {
+    margin-left: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
 }
+
 
 .index {
     color: #fff;
@@ -24,33 +26,13 @@
     margin: 50px -10px -10px -10px;
 }
 
-.titleLink {
-    text-decoration: none; 
-}
-
-.sspan {
-    margin-left: 10px;
-    font-size: 20px;
-}
-
-.hh1, .hh2, .hh5, .pp {
-    margin-left: 30px;
-}
-
-.text {
-    margin: 20px;
-    background-color: #5b645d;
-    padding: 3px 10px 10px 10px;
-    border-radius: 20px;
-}
-
 .explanation {
     display: inline-block;
     margin-top: 50px;
     border: 3px solid #ddd;
     border-radius: 10px;
     width: 100%;
-    padding: auto;
+    padding: 30px;
 }
 
 .square {

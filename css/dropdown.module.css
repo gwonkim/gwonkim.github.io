@@ -28,11 +28,7 @@
     display: block;
 }
 
-.aa {
-    text-decoration-line: none;
-}
-
-.dropdown-content a:hover {
+.dropdown-content .aa:hover {
     background-color: #5c5757;
 }
 
@@ -58,7 +54,6 @@
     margin-left: 7px;
     padding: 5px 5px;
 
-  
     /* Position the tooltip */
     position: absolute;
     z-index: 1;

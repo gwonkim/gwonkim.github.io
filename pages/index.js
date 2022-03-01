@@ -1,16 +1,14 @@
 import React from 'react';
 import AppLayout from '../components/AppLayout';
-import Intro from '../components/intro';
+import Intro from '../components/study/Intro';
 import indexStyles from '../css/index.module.css';
 
 const Home = () => {
     return(
-        <div className={indexStyles.index}>
-        <AppLayout>
-            <Intro />
-        </AppLayout>
+        <div>
+            <h1>Hello world</h1>
         </div>
     );
-}
+};
 
 export default Home;

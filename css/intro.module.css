@@ -1,0 +1,9 @@
+.explanation {
+    display: inline-block;
+    margin: 50px 0 0 0;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    width: 82vw;
+    max-width: 935px;
+}

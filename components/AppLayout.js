@@ -1,11 +1,10 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import Nav from './Nav';
+import Nav from './study/Nav';
 
 const AppLayout = ({ children }) => {
     return( 
         <>
-        <Nav />
         <div>
             { children }
         </div>
