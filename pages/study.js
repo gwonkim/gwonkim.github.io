@@ -6,7 +6,7 @@ import indexStyles from '../css/index.module.css';
 const study = () => {
     return (
       <div className={indexStyles.index}>
-            <Nav />
+          <Nav />
           <Intro />
       </div>
     );
