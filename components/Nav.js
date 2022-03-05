@@ -6,7 +6,6 @@ const Nav = () => {
       <div className={navStyles.nav}>
           <div className={navStyles.square}></div>
             <a href='../pages/study.js'>STUDY</a>
-            <h1>ㅇㅇㅇㅇ</h1>
       </div>
     );
 };

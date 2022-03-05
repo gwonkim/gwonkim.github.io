@@ -7,7 +7,6 @@ const Home = () => {
     return(
         <div>
             <AppLayout />
-            <h1>Hello world</h1>
         </div>
     );
 };
