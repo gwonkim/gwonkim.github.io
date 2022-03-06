@@ -1,0 +1,25 @@
+.appLayout {
+    background-color: rgb(235, 122, 122);
+    max-width: 1500px;
+    width: 70vw;
+    margin: 0px auto;
+    justify-content: center;
+}
+
+.nav {
+    width: 180px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.contents {
+    display: inline-flex;
+    border-radius: 20px;
+    max-width: 1500px;
+    width: 70vw;
+    margin: 0px auto;
+}
+
+.tab {
+    display: flex;
+}

@@ -15,7 +15,9 @@ const Tab = (contents) => {
             {v.tab}
           </div>
         ))}
-        <div className={tabStyle.tabContent}>{contentItem.content}</div>
+        <div className={tabStyle.tabContent}>
+          {contentItem.content}
+        </div>
       </div>
     );
 }

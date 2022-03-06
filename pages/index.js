@@ -1,13 +1,13 @@
 import React from 'react';
 import AppLayout from '../components/AppLayout';
-import Intro from '../components/study/Intro';
-import indexStyles from '../css/index.module.css';
+import Tab from "../components/tab";
+import { contents } from "../components/dummy";
 
 const Home = () => {
-    return(
-        <div>
-            <AppLayout />
-        </div>
+    return (
+      <AppLayout>
+        <Tab contents={contents} />
+      </AppLayout>
     );
 };
 

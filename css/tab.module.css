@@ -1,28 +1,14 @@
-/* .content-container__content { 
-    display: none; 
-}
-
-.content-container__content.target {
-    display: block; 
-}
-
-.tab-container__item.active { 
-    border-bottom: 2px solid #369fff;
-} */
-
 .tab {
-    display: block;
-    width: 70vw;
-    height: auto;
     cursor: pointer;
-    margin: 20px auto;
+    margin: 0;
     background-color: #ebdbeb;
 }
 
 .tabButton {
-    border: 2px solid #b9a1b9;
-    width: 120px;
-    display: inline-block;
+    border: 3px solid #b9a1b9;
+    background-color: #b8afb8;
+    width: 150px;
+    display: inline;
     border-radius: 10px;
     text-align: center;
     margin-right: 10px;
@@ -30,8 +16,10 @@
 
 .tabContent {
     display: block;
-    border: 5px solid #b9a1b9;
+    border: 5px solid #642064;
     border-radius: 10px;
     margin: 5px 0 10px 0;
-    padding: 10px;
+    padding: 20px 50px;
+    /* width: calc(100% - 110px); */
+    height: 80vh;
 }

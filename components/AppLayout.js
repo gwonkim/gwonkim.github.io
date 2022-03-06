@@ -1,19 +1,18 @@
 import React from "react";
 import propTypes from "prop-types";
 import Nav from "./Nav";
-import Tab from "./tab";
-import { contents } from "./dummy";
+import layoutStyle from '../css/appLayout.module.css'
+import Menu from "./Menu";
 
 const AppLayout = ({ children }) => {
-  console.log('App', contents);
   return (
-    <>
-      <div>
-        <Nav />
-        <Tab contents={contents} />
-        {children}
+    <div className={layoutStyle.appLayout}>
+      <Nav className={layoutStyle.nav} />
+      <div className={layoutStyle.contents}>
+        <Menu />
+        <div className={layoutStyle.tab}>{children}</div>
       </div>
-    </>
+    </div>
   );
 };
 
