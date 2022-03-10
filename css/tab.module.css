@@ -1,141 +1,42 @@
 .tab {
-    cursor: pointer;
     margin: 0;
-    background-color: #ebdbeb;
-    /* width: calc(100%-100px); */
+    text-shadow: 1px 2px 2px #000;
 }
 
 .tabButton {
-    border: 3px solid #b9a1b9;
-    background-color: #b8afb8;
     padding: 2px 10px;
     display: inline-block;
     border-radius: 10px;
     text-align: center;
     margin-right: 10px;
-    overflow: auto;
+    list-style-type: square;
+}
+
+.tabButtons{
+    width: 65vw;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.tabButtons:hover {
+    cursor: pointer;
 }
 
 .tabContent {
-    display: block;
-    border: 5px solid #642064;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     margin: 5px 0 10px 0;
     padding: 20px 50px;
-    /* width: calc(100% - 110px); */
-    height: auto;
+    height: 100%;
+    cursor: pointer;
 }
 
-.view{
-    width: 65vw;
-    max-width: 1000px;
-	border:1px solid red;
-	overflow: hidden;
-    background-color: aquamarine;
-/* 
-        width:200px;
-        height:150px;
-        border:1px solid red;
-        overflow: hidden; */
-}
-.scrollBlind{
-	width:230px;
-	height:100%;
-	overflow-y:scroll;
-	background-color: green;
-} 
-
-.tabButtons{
-    width:230px;
-	height:100%;
-    overflow-x: scroll;
-    /* width: 65vw;
-    max-width: 1000px; */
-    padding: 20px;
-   /*  overflow-x: scroll; */
-    color: #112031;
-    background: #F0D9FF;
-     /* 가로 스크롤 */
-    white-space: nowrap;
-    
-
-   /*  scrollbar-width: thin;
-    scrollbar-color: linear-gradient(180deg, #d0368a 0%, #708ad4 99%) transparent;
-   */ 
-    /* 스크롤 숨기기 */
-   /*  -ms-overflow-style: none; */ /* IE and Edge */
-   /*  scrollbar-width: none; */ /* Firefox */
-}
-
-
-
-/* 스크롤 숨기기 */
-/* .tabButtons::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
-/* } */
-
-.tabButtons:hover {
-    cursor: copy;
-}
-
-/* .tabButtons::-webkit-scrollbar { width: 10px; } 
-.tabButtons::-webkit-scrollbar-track { background-color: rgb(255, 255, 255); }
-.tabButtons::-webkit-scrollbar-thumb { background-color: azure; }
-
- */
-
-/* .tabButtons::-webkit-scrollbar {
+.square {
     width: 5px;
-}
-  
-.tabButtons::-webkit-scrollbar-track {
-    background-color: #f5f5f5;
-    border-radius: 100px;
-    width: 10px;
-}
-  
-.tabButtons::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
-    box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5);
-}
-   */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, */
-
-
-.view{
-    width: 65vw;
-    max-width: 1000px;
-	border:1px solid red;
-	overflow: hidden;
-    background-color: aquamarine;
-}
-.scrollBlind{
-	width:230px;
-	height:100%;
-	overflow-y:scroll;
-	background-color: green;
-} 
-.iul{
-	width:200px;
-}
-.ili{
-	height:50px;
-	line-height: 50px;
-	text-align: center;
-	border-bottom: 1px solid blue;
-	background-color: yellow;
+    height: 5px;
+    border: 1px solid #fff;
+    margin-right: 8px;
+    padding: auto;
+    display: inline-block;
+    vertical-align: middle;
 }

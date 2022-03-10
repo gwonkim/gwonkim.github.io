@@ -5,9 +5,11 @@ import { contents } from "../components/dummy";
 
 const Home = () => {
     return (
-      <AppLayout>
-        <Tab contents={contents} />
-      </AppLayout>
+      <>
+        <AppLayout>
+          <Tab contents={contents} />
+        </AppLayout>
+      </>
     );
 };
 

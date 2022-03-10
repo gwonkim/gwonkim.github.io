@@ -6,7 +6,6 @@ body {
 }
 
 .index {
-    color: #fff;
     margin: 30px auto 150px auto; 
     width: 80vw;
     height: 100%;
@@ -15,7 +14,6 @@ body {
 }
 
 .index2 {
-    color: #fff;
     margin: 30px auto; 
     width: 80vw;
     height: 100vh; /* index, 높이 값만 다름. */
@@ -30,7 +28,6 @@ li {
 
 a {
     text-decoration: underline;
-    color: #fff;
 }
 
 img {
@@ -63,7 +60,6 @@ pre {
     border-radius: 15px;
     padding-top: 30px;
     font-family: sans-serif;
-    color: #000;
     font-size: 13px;
     line-height: 30px;
     font-size: 20px;

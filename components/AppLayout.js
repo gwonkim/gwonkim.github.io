@@ -9,7 +9,7 @@ const AppLayout = ({ children }) => {
     <div className={layoutStyle.appLayout}>
       <Nav className={layoutStyle.nav} />
       <div className={layoutStyle.contents}>
-        <Menu />
+        {/* <Menu /> */}
         <div className={layoutStyle.tab}>{children}</div>
       </div>
     </div>
