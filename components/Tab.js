@@ -1,8 +1,9 @@
 import React from "react";
 import useTabs from "../hooks/useTabs";
 import tabStyle from "../css/tab.module.css";
+import Contents from "./Contents/Contents";
 
-const Tab = contents => {
+const Tab = (contents) => {
   const contentData = contents.contents;
   const { contentItem, onChangeContents } = useTabs(0, contentData);
 
@@ -14,11 +15,14 @@ const Tab = contents => {
             className={tabStyle.tabButton}
             onClick={() => onChangeContents(i)}
           >
-            <div className={tabStyle.square}></div>{v.tab}
+            <div className={tabStyle.square}></div>
+            {v.tab}
           </div>
         ))}
       </div>
-      <div className={tabStyle.tabContent}>{contentItem.content}</div>
+      <div className={tabStyle.tabContent}>
+        <Contents />
+      </div>
     </div>
   );
 };
