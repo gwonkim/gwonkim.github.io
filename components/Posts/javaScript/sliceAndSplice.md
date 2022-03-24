@@ -5,7 +5,6 @@ date : 2021
 
 ```
 
-
 # slice()와 splice()
 
 > slice() VS splice()
