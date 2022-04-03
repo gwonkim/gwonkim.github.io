@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "axios": "^0.26.1",
+    "fs": "0.0.1-security",
+    "gray-matter": "^4.0.3",
     "next": "^12.1.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
