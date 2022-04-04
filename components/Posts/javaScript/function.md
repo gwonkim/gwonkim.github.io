@@ -1,9 +1,9 @@
-```
+---
 
 title : Function
 date : 2021
 
-```
+---
 
 # Function : 함수
 

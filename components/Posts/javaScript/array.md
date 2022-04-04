@@ -1,9 +1,8 @@
-```
+---
 
 title : Array
 date : 2021
-
-```
+---
 
 # Array : 배열
 

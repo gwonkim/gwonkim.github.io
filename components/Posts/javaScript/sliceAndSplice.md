@@ -1,9 +1,9 @@
-```
+---
 
 title : slice() and splice()
 date : 2021
 
-```
+---
 
 # slice()와 splice()
 

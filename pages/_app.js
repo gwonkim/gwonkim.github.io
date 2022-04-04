@@ -1,13 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Head from 'next/head';
-import '../css/global.css';
+import React from "react";
+import App from "next/app";
+import Head from "next/head";
+import PropTypes from "prop-types";
+import "../css/global.css";
 
-const Gwonkim = ({ Component }) => (
+const Gwonkim = ({ Component, props }) => (
   <>
     <Head>
       <meta charSet="utf-8" />
-      <title>Gwonkim</title>
+      <title>Hello I'm Jiwon</title>
       <htmlAttributes lang="ko" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta
@@ -17,7 +18,7 @@ const Gwonkim = ({ Component }) => (
       <meta name="description" content="김지원의 깃블로그입니다." />
       <meta name="og:title" content="jiwon의 gitblog" />
     </Head>
-    <Component />
+    <Component {...props} />
   </>
 );
 
@@ -25,4 +26,9 @@ Gwonkim.propTypes = {
   Component: PropTypes.elementType.isRequired,
 };
 
-export default Gwonkim;
+Gwonkim.getInitialProps = async ctx => {
+  const appProps = await App.getInitialProps(ctx);
+  return { ...appProps };
+};
+
+export default App;
