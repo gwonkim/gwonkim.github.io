@@ -3,7 +3,7 @@ import PostLayout from '../../components/PostLayout';
 // import Layout from "../../components/Layout";
 import { getAllPostIds } from "../../lib/posts";
 
-const Post = ({ postData}) => {
+const Post = ({ postData }) => {
     return (
         <PostLayout>
             {postData.title}

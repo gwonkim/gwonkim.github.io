@@ -1,62 +1,37 @@
 import React, { useState } from "react";
-// import PostLayout from "../components/PostLayout";
-import { getSortedPostsData } from "../lib/post2";
+import Link from "next/link";
+import { getSortedPostsData } from "../lib/posts";
+import Style from '../css/postTitle.module.css'
 
-const Home = ({ allPostsData }) => {
-  const { data, onData } = useState(allPostsData);
-  console.log("aaaaaaa", allPostsData);
-  console.log("data", data);
+const Home = ({ allPost, allTitle }) => {
+ console.log("usepostrs >>>", allPost);
   return (
-    <>
+    <div className={Style.post}>
+      <h1>Hi I'm Jiwon</h1>
       <h2>Blog</h2>
-      <ul>
-        {allPostsData &&
-          allPostsData.map(a => {
-            return (
-              <li key={id}>
-                {a.title}
-                <br />
-                {a.id}
-                <br />
-                {a.date}
-              </li>
-            );
-          })}
-        {allPostsData}
-      </ul>
-    </>
+{/*       {allPost && allPost.map((post) => {
+          return (
+              <div className={Style.titleLayout} key={post.id}>
+                <p className={Style.id}>{post.id}</p>
+                <p className={Style.title}>{post.title}</p>
+                <p className={Style.date}>{post.date}</p>
+              </div>
+          );
+        })} */}
+    </div>
   );
 };
 
-export default Home;
-
-/* export async function getStaticPaths() {
-    const paths = getAllPostIds()
-    return {
-        paths,
-        fallback: false
-    }
-}
-
-export async function getStaticProps({params}){
-    const postData = getPostData(params.id);
-    return {
-        props : {
-            postData
-        }
-    };
-};
- */
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
-  console.log("allPostsData");
-  console.log(allPostsData);
+  // console.log('----------------------');
+  //console.log(allPostsData);
+
   return {
     props: {
-      allPostsData,
+      allPost: allPostsData,
     },
   };
-}
+};
 
-// 이제 url의 id값을 getPostData에 전달하고
-// 해당하는 postData를 불러와서 props로 전달 받음.
+export default Home;
