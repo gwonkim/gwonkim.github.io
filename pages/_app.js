@@ -2,6 +2,7 @@ import React from "react";
 import App from "next/app";
 import Head from "next/head";
 import PropTypes from "prop-types";
+import 'antd/dist/antd.css'
 import "../css/global.css";
 
 const Gwonkim = ({ Component, props }) => (
