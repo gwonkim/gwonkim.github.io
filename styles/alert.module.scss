@@ -1,0 +1,17 @@
+.box {
+    font-size: 10px;
+    background-color: rgba(247, 247, 247, 0.642);
+    // position: fixed;
+    // width: 100vw;
+    height: 20px;
+
+    .alert {
+        font-family: 'Nanum Myeongjo';
+        text-align: center;
+
+        a {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
+}
