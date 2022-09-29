@@ -1,21 +1,18 @@
 import React from "react";
-import Alert from "./alert";
 import Footer from "./footer";
-import Header from "./header";
+import Header from "./nav";
 import Meta from "./meta";
 
 type Props = {
-  preview?: boolean;
-  children: React.ReactNode;
+  children: React.ReactNode
 };
 
-const Layout = ({ preview, children }: Props) => {
+const Layout = ({ children }: Props) => {
   return (
     <>
-      <Alert />
       <Meta />
+      <Header />
       <div>
-        {/* <Header /> */}
         <main className="container">{children}</main>
         <Footer />
       </div>

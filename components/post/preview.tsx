@@ -1,7 +1,8 @@
-import DateFormatter from '../date-formatter'
-import CoverImage from '../cover-image'
-import Link from 'next/link'
 import React from 'react'
+import Link from 'next/link'
+import DateFormatter from './date-formatter'
+import CoverImage from '../cover-image'
+import Style from '../../styles/post.module.scss';
 
 type Props = {
   title: string
@@ -9,25 +10,25 @@ type Props = {
   date: string
   excerpt: string
   id: string
-}
+};
 
-const PostPreview = ({ title, date, excerpt, id }: Props) => {
+const PostPreview = ({ title, date, excerpt, coverImage, id }: Props) => {
   return (
-    <div style={{'border' : '3px soild brown' }}>
-      {/* <div className="mb-5">
+    <div className={Style.post}>
+      <div>
         <CoverImage id={id} title={title} src={coverImage} />
-      </div> */}
+      </div>
       <h1>
         <Link as={`/posts/${id}`} href="/posts/[id]">
           <a>{title}</a>
         </Link>
       </h1>
-      <div className="text-lg mb-4">
+      <div>
         <DateFormatter dateString={date} />
       </div>
-      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <p>{excerpt}</p>
     </div>
   )
-}
+};
 
-export default PostPreview
+export default PostPreview;

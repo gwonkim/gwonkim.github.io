@@ -11,6 +11,7 @@
     "fs": "0.0.1-security",
     "gray-matter": "^4.0.3",
     "marked": "^4.1.0",
+    "monent": "0.0.2-security",
     "next": "^12.3.1",
     "prop-types": "^15.8.1",
     "raw-loader": "^4.0.2",
