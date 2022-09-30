@@ -1,5 +1,5 @@
-import React from 'react'
-import markdownStyles from '../markdown-styles.module.css'
+import React from 'react';
+import markdownStyles from '../markdown-styles.module.css';
 
 type Props = {
   content: string
@@ -8,10 +8,11 @@ type Props = {
 const PostBody = ({ content }: Props) => {
   return (
     <div
+    style={{'marginTop': '30px'}}
       className={markdownStyles['markdown']}
       dangerouslySetInnerHTML={{ __html: content }}
     />
   )
-}
+};
 
 export default PostBody

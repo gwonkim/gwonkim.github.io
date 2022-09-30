@@ -6,10 +6,11 @@ import PostHeader from '../../components/post/hearder';
 import PostTitle from '../../components/post/title';
 import PostBody from '../../components/post/body';
 import Layout from '../../components/layout';
+import type PostType from '../../interfaces/post';
 import { getPostById, getAllPosts } from '../../lib/api';
 import { CMS_NAME } from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
-import type PostType from '../../interfaces/post';
+import Style from '../../styles/post.module.scss';
 
 type Props = {
     post: PostType
@@ -24,7 +25,7 @@ export default function Post({ post }: Props) {
     return (
         <Layout>
             {router.isFallback ? (
-                <PostTitle>Loading…</PostTitle>
+                <PostTitle link={false} id={''}>Loading…</PostTitle>
             ) : (
                 <>
                     <article>
@@ -38,7 +39,10 @@ export default function Post({ post }: Props) {
                             coverImage={post.coverImage}
                             date={post.date}
                         />
+                        <div className={Style.body}>
+
                         <PostBody content={post.content} />
+                        </div>
                     </article>
                 </>
             )}

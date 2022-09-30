@@ -1,12 +1,21 @@
 import React, { ReactNode } from 'react';
+import Link from 'next/link'
 
 type Props = {
   children?: ReactNode
+  link: boolean
+  id: string
 }
 
-const PostTitle = ({ children }: Props) => {
+const PostTitle = ({ children, link, id }: Props) => {
   return (
-    <h1>{children}</h1>
+    link ?
+      (<h1>
+        <Link as={`/posts/${id}`} href="/posts/[id]">
+          <a>{children}</a>
+        </Link>
+      </h1>)
+      : (<h1>{children}</h1>)
   )
 }
 
