@@ -6,6 +6,7 @@ author:
   name: '김지원'
 ogImage:
   url: '/assets/blog/preview/test.jpg'
+category: 'blog'
 ---
 
 # log

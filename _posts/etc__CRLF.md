@@ -6,6 +6,7 @@ author:
   name: '김지원'
 ogImage:
   url: '/assets/blog/preview/box.jpg'
+category: 'etc'
 ---
 
 # 줄바꿈(newline)

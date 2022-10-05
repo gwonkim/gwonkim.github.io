@@ -4,6 +4,7 @@ date: '2021'
 author:
   name: '김지원'
 ogImage:
+category: 'git'
 ---
 
 # GIT : Branch

@@ -6,6 +6,7 @@ author:
   name: '김지원'
 ogImage:
   url: '/assets/blog/preview/box.jpg'
+category: 'error'
 ---
 
 # getStaticProps undefined
@@ -16,6 +17,7 @@ ogImage:
 ## 해결
 - _app.js에서 component에 props 파라미터로 전달 설정
 - 이후 pages의 다른 페이지에서 props 전달 정상 작동
+
 
 ```javascript
 // _app.js

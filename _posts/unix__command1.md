@@ -6,6 +6,7 @@ author:
   name: '김지원'
 ogImage:
   url: ''
+category: 'unix'
 ---
 
 # 유닉스 기본 명령어

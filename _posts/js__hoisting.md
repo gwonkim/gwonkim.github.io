@@ -3,6 +3,7 @@ title: '[JS] Hoisting'
 date: '2021'
 author:
   name: '김지원'
+category: 'js'
 ---
 
 

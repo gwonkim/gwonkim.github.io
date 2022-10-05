@@ -3,6 +3,7 @@ title: '[Git] Command'
 date: '2021'
 author:
   name: '김지원'
+category: 'git'
 ---
 
 # GIT : Command

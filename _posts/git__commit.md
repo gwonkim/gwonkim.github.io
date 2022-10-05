@@ -3,6 +3,7 @@ title: '[Git] Commit'
 date: '2021'
 author:
   name: '김지원'
+category: 'git'
 ---
 
 # GIT : Commit

@@ -6,6 +6,7 @@ author:
   name: '김지원'
 ogImage:
   url: ''
+category: 'unix'
 ---
 
 ## Less

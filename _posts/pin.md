@@ -8,7 +8,7 @@ author:
   name: '김지원'
 ogImage:
   url: '/assets/blog/preview/box.jpg'
-
+category: 'pin'
 ---
 
 ## 안녕하세요 김지원입니다.
