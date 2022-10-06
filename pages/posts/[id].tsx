@@ -11,6 +11,7 @@ import { getPostById, getAllPosts } from '../../lib/api';
 import { CMS_NAME } from '../../lib/constants';
 import markdownToHtml from '../../lib/markdownToHtml';
 import Style from '../../styles/post.module.scss';
+import Footer from '../../components/footer';
 
 type Props = {
     post: PostType
@@ -45,6 +46,7 @@ export default function Post({ post }: Props) {
                     </article>
                 </>
             )}
+            <Footer />
         </Layout>
     )
 }

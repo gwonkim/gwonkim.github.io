@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Footer from "./footer";
 import Header from "./nav";
 import Meta from "./meta";
+import { Tag } from "antd";
 
 type Props = {
   children: React.ReactNode
@@ -12,10 +13,7 @@ const Layout = ({ children }: Props) => {
     <>
       <Meta />
       <Header />
-      <div>
-        <main className="container">{children}</main>
-        <Footer />
-      </div>
+      <main>{children}</main>
     </>
   );
 };

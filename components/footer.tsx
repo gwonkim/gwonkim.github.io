@@ -1,10 +1,9 @@
-import React from 'react';
-import Style from '../styles/footer.module.scss';
+import React, { useEffect } from 'react';
 import { GITHUB_URL, BLOG_REPOSITORY_URL } from '../lib/constants';
 
 const Footer = () => {
   return (
-    <footer className={Style.footer}>
+    <footer>
       <hr />
       <h3>Jiwon's Study Pages</h3>
       <p>
