@@ -40,7 +40,7 @@
     "start": "next start",
     "build": "next build",
     "export": "next export",
-    "dev": "next -p 8089", 
+    "dev": "next -p 8089",
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\""
   },
   "repository": {

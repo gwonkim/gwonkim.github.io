@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect, useCallback, } from "react";
-import { GITHUB_URL } from "../lib/constants";
+import { GITHUB_URL, EMAIL } from "../lib/constants";
 
 const Intro = () => {
   const onScroll = useCallback(() => {
@@ -25,8 +25,16 @@ const Intro = () => {
       <h1 className="typing">안녕하세요 김지원입니다.</h1>
       <div className="text">
         <h3>완성하는 프론트엔드 웹 개발자 김지원입니다.</h3>
+        <ul>
+          <li>
+            github : <a href={GITHUB_URL}>gwonkim</a>
+          </li>
+          <li>
+            email : {EMAIL}
+          </li>
+        </ul>
+
         <h4>
-          자기소개 구간 및 블로그 소개 <a href={GITHUB_URL}>JIWON'S GITHUB</a>
         </h4>
       </div>
     </>

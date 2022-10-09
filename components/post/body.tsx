@@ -8,7 +8,7 @@ type Props = {
 const PostBody = ({ content }: Props) => {
   return (
     <div
-    style={{'marginTop': '30px'}}
+      style={{'marginTop': '30px'}}
       className={markdownStyles['markdown']}
       dangerouslySetInnerHTML={{ __html: content }}
     />
