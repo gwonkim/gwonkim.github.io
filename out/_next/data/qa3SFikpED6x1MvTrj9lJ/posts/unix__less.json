@@ -1,1 +1,0 @@
-{"pageProps":{"post":{"title":"[unix] Less","date":"2021","id":"unix__less","content":"<h2>Less</h2>\n<h2>단축키</h2>\n<p>|<strong>단축키</strong>|<strong>설명</strong>|\n|:----:|:----:|\n|h|도움말|\n|q|실행종료|\n|e|한 줄 아래|\n|y|한 줄 위로|\n|f|한 화면 아래|\n|b|한 화면 위로|\n|/패턴|뒷 방향, 정규식 패턴에 일치 문자열 찾기|\n|?패턴|앞 방향, 정규식 패턴에 일치 문자열 찾기|\n|/|앞 방향 계속 찾기|\n|?|뒷 방향 계속 찾기|</p>\n"}},"__N_SSG":true}

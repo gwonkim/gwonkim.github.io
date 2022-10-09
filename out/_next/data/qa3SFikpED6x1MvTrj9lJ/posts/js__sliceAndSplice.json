@@ -1,1 +1,0 @@
-{"pageProps":{"post":{"title":"[JS] slice&splice","date":"2021","id":"js__sliceAndSplice","content":"<h1>slice()와 splice()</h1>\n<blockquote>\n<p>slice() VS splice()</p>\n</blockquote>\n<ul>\n<li>slice()\n<ul>\n<li>배열을 얕은 복사해서 새로운 배열로 반환</li>\n</ul>\n</li>\n<li>splice()\n<ul>\n<li>배열의 기존 요소를 추가, 변경, 삭제</li>\n<li>원본 요소 변경(깊은 복사)</li>\n</ul>\n</li>\n</ul>\n"}},"__N_SSG":true}
