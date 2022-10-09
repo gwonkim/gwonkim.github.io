@@ -1,0 +1,1 @@
+{"pageProps":{"post":{"title":"[bash] TIME","date":"2021","id":"bash__time","content":"<h2>시간 설정</h2>\n<blockquote>\n<p>기본 타임존 미국</p>\n</blockquote>\n<blockquote>\n<p>현재 시각 출력 : date\n타임존 서울 변경 : sudo ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime</p>\n</blockquote>\n"}},"__N_SSG":true}
