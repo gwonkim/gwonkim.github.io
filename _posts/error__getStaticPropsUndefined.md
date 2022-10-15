@@ -1,11 +1,11 @@
 ---
 title: '[에러] getStaticProps props undefined'
-coverImage: '/assets/blog/preview/box.jpg'
-date: '2022.04.04'
+coverImage: ''
+date: '2022.04'
 author:
   name: '김지원'
 ogImage:
-  url: '/assets/blog/preview/box.jpg'
+  url: ''
 category: 'error'
 ---
 

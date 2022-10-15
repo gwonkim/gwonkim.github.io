@@ -1,11 +1,8 @@
 ---
 title: '[JS] Number'
-coverImage: '/assets/blog/preview/box.jpg'
 date: '2021'
 author:
   name: '김지원'
-ogImage:
-  url: '/assets/blog/preview/box.jpg'
 category: 'js'
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: '[JS] Type'
-coverImage: '/assets/blog/preview/box.jpg'
+coverImage: ''
 date: '2021'
 author:
   name: '김지원'
 ogImage:
-  url: '/assets/blog/preview/box.jpg'
+  url: ''
 category: 'js'
 ---
 

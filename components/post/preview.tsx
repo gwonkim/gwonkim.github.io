@@ -15,7 +15,7 @@ type Props = {
 const PostPreview = ({ title, date, excerpt, coverImage, id }: Props) => {
   return (
     <div className={Style.post}>
-      <CoverImage id={id} title={title} src={coverImage} />
+      {coverImage ? <CoverImage id={id} title={title} src={coverImage} /> : <></>}
       <PostTitle id={id} link={true} >{title}</PostTitle>
       <DateFormatter dateString={date} />
       <p>{excerpt}</p>

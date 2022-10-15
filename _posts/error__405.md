@@ -1,11 +1,11 @@
 ---
 title: '[에러] Http Status 405'
-coverImage: '/assets/blog/preview/box.jpg'
+coverImage: ''
 date: '2020'
 author:
   name: '김지원'
 ogImage:
-  url: '/assets/blog/preview/box.jpg'
+  url: ''
 category: 'error'
 ---
 
