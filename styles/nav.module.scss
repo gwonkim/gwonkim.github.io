@@ -1,4 +1,6 @@
-$margin : 80px;
+$margin : 10vw;
+$min : 45px;
+
 
 .nav {
     font-size: 20px;
@@ -11,17 +13,18 @@ $margin : 80px;
     z-index: 1;
     top: 0;
 
+    .left, .right {
+        font-family: "Anton";
+        min-width: $min;
+    }
+
     .left {
         float: left;
         margin-left: $margin;
     }
-
+    
     .right {
         float: right;
         margin-right: $margin;
-
-        a {
-            margin-left: 20px;
-        }
     }
 }
