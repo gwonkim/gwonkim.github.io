@@ -18,5 +18,7 @@ category: 'etc'
 - LF : Line Feed(\n)
     - 커서는 그 자리에 그대로 둔 상황에서 종이만 한 줄 올려 줄을 바꾸는 동작
 
-> System.out.printf("dfddd");
-> System.out.print("dfddd", \t);
+```JAVA
+System.out.printf("dfddd");
+System.out.print("dfddd", \t);
+```

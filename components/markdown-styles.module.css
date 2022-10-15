@@ -1,0 +1,56 @@
+.markdown {
+  font-size: 1em;
+}
+
+.markdown anchor {
+  cursor: pointer;
+
+}
+
+.markdown blockquote {
+  padding: 10px;
+  border: #1c3879 2px solid;
+  border-radius: 15px;
+  vertical-align: middle;
+}
+
+.markdown hr {
+  height: 2px;
+  border: double #607eaa 1px;
+}
+
+.markdown h1 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #bbd0ee;
+  padding: 7px 15px;
+  border-radius: 15px;
+}
+
+.markdown h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: #e7ecf4;
+  padding: 3px 10px;
+  font-size: 1.2em;
+}
+
+.markdown h3, 
+.markdown h4, 
+.markdown h5, 
+.markdown h6 {
+  font-size: 1em;
+}
+
+/* CODE */
+.markdown pre {
+  border-radius: 15px;
+  padding: 10px 25px;
+  background: #f4f4f4;
+}
+
+.markdown code {
+  color: #1c3879;
+  white-space: pre-wrap;
+}

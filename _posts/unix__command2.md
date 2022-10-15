@@ -10,10 +10,12 @@ category: 'unix'
 ---
 
 # 유닉스 기초 명령어
-## 경로명
+- 경로명 / 명령어 / 와일드카드
 
-> 디렉토리 = 폴더(운영체제에 따른 용어 다름, 윈도우 리눅스)
+---------
 
+# 경로명
++ 디렉토리 = 폴더(운영체제에 따른 용어 다름, 윈도우 리눅스)
 - 디렉토리 구분 문자
     - /
     - ex) ~/documents/text(홈디렉토리의 문서 폴더의 text 디렉토리로 이동)
@@ -43,44 +45,46 @@ category: 'unix'
     - ex) rm ~/text.txt
         - (홈 디렉토리에 있는 text.txt 파일 삭제)
 
-## 명령어
-> pwd
->> 현재 위치한 디렉토리 출력
 
-> cd
->> change directory(디렉토리 이동)
+# 명령어
+## pwd
+현재 위치한 디렉토리 출력
 
-> mkdir
->> make directory
+## cd
+change directory(디렉토리 이동)
 
-> rmdir
->> remove directory
+## mkdir
+make directory
 
-> rm
->> remove
+## rmdir
+remove directory
 
-> mv
->> move
+## rm
+remove
 
-> cp
->> copy
+## mv
+move
 
-> ls
->> list(현재 디렉토리의 파일과 서브 디렉토리에 대한 리스트 출력)
+## cp
+copy
 
-> cat
->> concatenate(파일 내용 화면에 출력)
+## ls
+list(현재 디렉토리의 파일과 서브 디렉토리에 대한 리스트 출력)
 
-> clear
->> 화면 내용 지우기
+## cat
+concatenate(파일 내용 화면에 출력)
 
-## 와일드 카드(Wild Card)
+## clear
+화면 내용 지우기
+
+
+# 와일드 카드(Wild Card)
 - *정규식과는 조금 다름
-> *
->> 어떤 문자열과도 일치(빈 문자열 포함)
+## *
+어떤 문자열과도 일치(빈 문자열 포함)
 
-> ?
->> 어떤 한 문자와 일치
+## ?
+어떤 한 문자와 일치
 
-> [abc]
->> a문자 b문자 c문자 중 한 문자와 일치
+## [abc]
+a문자 b문자 c문자 중 한 문자와 일치

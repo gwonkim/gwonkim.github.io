@@ -32,7 +32,7 @@ category: 'error'
 
 
 
-+ 틀린 방법("", 따옴표 사용)
+## 틀린 방법("", 따옴표 사용)
 
 ```javascript
 import styles from "css 위치";
@@ -47,7 +47,7 @@ const Hello1 = () => {
           
 ```
 
-+ 옳은 방법({}, 중괄호 사용)
+## 옳은 방법({}, 중괄호 사용)
 
 
 ```javascript
@@ -63,4 +63,3 @@ const Hello2 = () => {
 
 ```
 
-====

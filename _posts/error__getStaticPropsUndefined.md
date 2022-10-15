@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-
 MyApp.getStaticProps = async (ctx) => {
   const appProps = await App.getStaticProps(ctx);
   return { ...appProps }
@@ -37,5 +36,8 @@ export default App;
 
 ```
 
+# 참고자료
 [참고자료: stackoverflow](https://stackoverflow.com/questions/63434733/getting-props-as-undefined-in-component-returned-from-getstaticprops)
 [참고자료: next.js 공식문서 - custom App](https://nextjs.org/docs/advanced-features/custom-app)
+
+

@@ -11,18 +11,18 @@ category: 'js'
 
 ## Allow Function
 - allowFunction = () => {}
-<pre>
+```js
 let FunctionName = ( parameter ) => { 
     ...
 }
-</pre>
+```
 
 ## Function
-<pre>
+```js
 Function functionName {
     ...
 }
-</pre>
+```
 
 ## Allow Function VS Function
 - setInterval(callback, 1000)의 callback 함수 작성 시 문제 발생!
