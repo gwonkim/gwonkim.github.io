@@ -7,7 +7,8 @@ category: 'git'
 ---
 
 # GIT : repository
-## state : 상태
+------------
+# state : 상태
 
         <ul>
 - git repository<br />
@@ -15,16 +16,16 @@ category: 'git'
     + local repository
     + remote repository
 
-### 1. local repository
+## 1. local repository
 - 개인 PC에 생성되는 개인 전용 repository
 - 각자의 PC의 local repository에서 버전 관리 및 작업을 하다가 공유해야 할 때 remote repository에 업로드 
 
-### 2. remote repository
+## 2. remote repository
 - 팀원끼리 공유되는 repository<br />
 - 팀원 모두 접근할 수 있는 remote 서버에 만들어짐.<br />
 - ex) github
 
-## local repository와 remote repository 연결 명령어
+# local repository와 remote repository 연결 명령어
 > 내 pc에 local repository 만드는 법
 1. 대상 폴더에 git 설치
     - git init
@@ -40,5 +41,5 @@ category: 'git'
     - *생략 가능
     - git branch -M main
 
-> Clone 만드는 법
+# Clone 만드는 법
 - git clone git_URL(ex: git clone https://github.com/test/test.git)

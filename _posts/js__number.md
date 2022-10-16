@@ -1,22 +1,18 @@
 ---
 title: '[JS] Number'
-coverImage: '/assets/blog/preview/box.jpg'
 date: '2021'
 author:
   name: '김지원'
-ogImage:
-  url: '/assets/blog/preview/box.jpg'
 category: 'js'
 ---
 
 # Number
 
-## Number
-> javaScript 경우 정수 실수 구분없이 모두 실수로 처리
+## javaScript 경우 정수 실수 구분없이 모두 실수로 처리
 
-> 배정밀도 64비트 부동소수점 형식 따름
+## 배정밀도 64비트 부동소수점 형식 따름
 
-> 정수만 표현하기 위한 데이터 타입이 별도로 존재하지 X
+## 정수만 표현하기 위한 데이터 타입이 별도로 존재하지 X
 
 + 정수 실수 2진수 8진수 16진수
     + 배정밀도 64비트 부동소수점 형식의 2진수로 저장

@@ -7,9 +7,7 @@ category: 'js'
 ---
 
 # Array : 배열
-
-> Array Method
->> 리턴 값이 false일 경우 -1 리턴
+## 리턴 값이 false일 경우 -1 리턴
 *자주 사용하는 메서드
 - toString()
 - splice()

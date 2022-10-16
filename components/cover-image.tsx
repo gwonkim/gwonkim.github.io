@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { DEFAULT_IMAGE } from '../lib/constants';
 
 type Props = {
   title: string
@@ -9,20 +8,18 @@ type Props = {
 };
 
 const CoverImage = ({ title, src, id }: Props) => {
-  const image = (
-    <img
-      src={src ? src : DEFAULT_IMAGE}
-      alt={`${title}의 커버 이미지입니다.`}
-    />
-  );
-
   return (
     <div>
       {id ?
-        <Link as={`/posts/${id}`} href="/posts/[id]">
-          <a aria-label={title}>{image}</a>
-        </Link>
-        : image}
+          <Link as={`/posts/${id}`} href="/posts/[id]">
+            <a aria-label={title}>
+              <img
+                src={src}
+                alt={`${title}의 커버 이미지입니다.`}
+              />
+            </a>
+          </Link>
+          : <></>}
     </div>
   )
 };

@@ -22,11 +22,9 @@ category: 'error'
 - webpack downgrade(4.x 버전 이내로)
 
 
-```
+```JS
 $ npm i webpack@4.44.0
 ```
 
 ![webpackError2](https://user-images.githubusercontent.com/62700252/161536264-47e9ca1a-ced7-4de4-a2f0-c3fcf8743a3f.PNG)
 
-
-=====

@@ -16,8 +16,8 @@ const Gwonkim = ({ Component, props }) => (
         name="viewport"
         content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes,viewport-fit=cover"
       />
-      <meta name="description" content="김지원의 깃블로그입니다." />
-      <meta name="og:title" content="jiwon의 gitblog" />
+      <meta name="description" content="jiwon의 gitblog" />
+      <meta name="og:title" content="gwonkim" />
       <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400" rel="stylesheet"></link>
       <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400" rel="stylesheet"></link>
     </Head>

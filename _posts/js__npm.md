@@ -1,16 +1,13 @@
 ---
-title: '[REACT] start'
+title: '[JS] npm'
 coverImage: ''
 date: '2021'
 author:
   name: '김지원'
 ogImage:
   url: ''
-category: 'react'
+category: 'js'
 ---
-
-
-# React Start
 
 ## 설치 및 버전 확인
 - node -v

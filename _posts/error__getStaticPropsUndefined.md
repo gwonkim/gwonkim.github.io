@@ -1,11 +1,11 @@
 ---
 title: '[에러] getStaticProps props undefined'
-coverImage: '/assets/blog/preview/box.jpg'
-date: '2022.04.04'
+coverImage: ''
+date: '2022.04'
 author:
   name: '김지원'
 ogImage:
-  url: '/assets/blog/preview/box.jpg'
+  url: ''
 category: 'error'
 ---
 
@@ -28,7 +28,6 @@ function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-
 MyApp.getStaticProps = async (ctx) => {
   const appProps = await App.getStaticProps(ctx);
   return { ...appProps }
@@ -37,5 +36,8 @@ export default App;
 
 ```
 
+# 참고자료
 [참고자료: stackoverflow](https://stackoverflow.com/questions/63434733/getting-props-as-undefined-in-component-returned-from-getstaticprops)
 [참고자료: next.js 공식문서 - custom App](https://nextjs.org/docs/advanced-features/custom-app)
+
+

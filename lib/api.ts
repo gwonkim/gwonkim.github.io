@@ -41,6 +41,12 @@ export function getAllPosts(fields: string[] = []) {
   return posts;
 };
 
+export function getProjectPosts(fields: string[] = []) {
+  const ids = getPostIds();
+  const posts = ids.map((id) => getPostById(id, fields)).filter(v => v.category === 'project')
+  return posts;
+};
+
 export function getCategoryPost(fields: string[] = []) {
   const ids = getPostIds();
   const CATEGORT: any = {};
