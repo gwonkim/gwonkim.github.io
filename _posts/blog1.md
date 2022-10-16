@@ -2,7 +2,7 @@
 title: "PROJECT : BLOG(버전1)"
 excerpt: "개인 블로그 개발 프로젝트"
 coverImage: ""
-date: "2021.7~"
+date: "2021.07~2022.08"
 author:
   name: "김지원"
 ogImage:
