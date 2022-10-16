@@ -30,5 +30,5 @@ category: 'unix'
 - ex) ls -l | gzip > list.txt.gz
 - ls -l 명령의 출력을 gzip의 입력으로 넘겨 압축한 출력 데이터를 list.txt.gz에 저장
 
-## [Filter](../posts/unix__filter)
+## [Filter](./unix__filter)
 - 파이트 방식으로 연결해 사용하는 것이 주 목적인 명령

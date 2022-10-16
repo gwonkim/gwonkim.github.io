@@ -22,6 +22,5 @@ export const POST_CATEGORT = [
     'bash',
     'unix',
     'error',
-    /* 'mini-project', */
     'etc',
 ];
