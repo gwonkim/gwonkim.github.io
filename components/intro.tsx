@@ -13,7 +13,7 @@ const Intro = () => {
       typing.style.visibility = 'visible';
       text.style.paddingTop = '150px';
     }
-  }, [])
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -27,7 +27,7 @@ const Intro = () => {
         <h3>완성하는 프론트엔드 웹 개발자 김지원입니다.</h3>
         <ul>
           <li>
-            github : <a href={GITHUB_URL}>gwonkim</a>
+            github : <a target="_blank" rel="noreferrer" href={GITHUB_URL}>gwonkim</a>
           </li>
           <li>
             email : {EMAIL}

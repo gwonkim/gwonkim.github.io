@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import PostView from "../components/posts";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import { getAllPosts, getCategoryPost } from "../lib/api";
+import { getCategoryPost } from "../lib/api";
 import Head from "next/head";
 import { CMS_NAME, POST_CATEGORT } from "../lib/constants";
 import Post from "../interfaces/post";
-import PinPost from "../components/pin-post";
 import Style from "../styles/tag.module.scss";
 import Footer from "../components/footer";
 

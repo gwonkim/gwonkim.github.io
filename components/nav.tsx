@@ -11,14 +11,8 @@ const Nav = () => {
         </Link>
       </span>
       <span className={Style.right}>
-        <Link href="/">
-          <a>Git</a>
-        </Link>
-        <Link href="/">
-          <a>JS</a>
-        </Link>
-        <Link href="/">
-          <a>Blog</a>
+        <Link href="/pin">
+          <a>resume</a>
         </Link>
       </span>
     </div>
