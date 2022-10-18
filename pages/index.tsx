@@ -10,8 +10,8 @@ import Style from "../styles/tag.module.scss";
 import Footer from "../components/footer";
 
 type Props = {
-  preview?: boolean;
-  allPosts: Post[];
+  preview?: boolean,
+  allPosts: Post[],
 };
 
 export default function Index({ allPosts }: Props) {
