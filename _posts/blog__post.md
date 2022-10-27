@@ -7,7 +7,7 @@ author:
   name: "김지원"
 ogImage:
   url: ""
-category: "project"
+category: "js"
 ---
 
 # 게시글 렌더링

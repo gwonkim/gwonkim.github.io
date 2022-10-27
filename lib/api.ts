@@ -59,7 +59,7 @@ export function getCategoryPost(fields: string[] = []) {
   POST_CATEGORT.map((c) => {
     CATEGORT[c] = [];
     posts.map((v: any) => {
-      if (v.category === c) {
+      if (v.category === c.toLowerCase()) {
         CATEGORT[c].push(v);
       }
     })

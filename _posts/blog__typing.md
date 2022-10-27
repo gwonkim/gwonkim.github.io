@@ -4,7 +4,7 @@ excerpt: "블로그 인트로 제작"
 date: "2022.10"
 author:
   name: "김지원"
-category: "project"
+category: "js"
 ---
 
 # 타이핑 애니메이션
