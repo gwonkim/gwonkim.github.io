@@ -4,7 +4,6 @@
 
 .markdown anchor {
   cursor: pointer;
-
 }
 
 .markdown img {
@@ -13,6 +12,7 @@
   -moz-user-select: -moz-none !important;
   -ms-user-select: none !important;
   user-select: none !important;
+  border: 2px solid #607eaa;
 }
 
 .markdown blockquote {
@@ -44,11 +44,21 @@
   font-size: 1.2em;
 }
 
-.markdown h3, 
-.markdown h4, 
-.markdown h5, 
+.markdown h3,
+.markdown h4,
+.markdown h5,
 .markdown h6 {
   font-size: 1em;
+}
+
+.markdown li {
+  margin: 10px;
+}
+
+.markdown strong {
+  margin: 20px 30px;
+  background-color: #cbe0ff;
+  padding: 5px
 }
 
 /* CODE */
