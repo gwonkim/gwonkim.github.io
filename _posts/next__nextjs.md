@@ -6,7 +6,7 @@ author:
   name: '김지원'
 ogImage:
   url: ''
-category: 'next'
+category: 'js'
 ---
 
 # NEXT.js

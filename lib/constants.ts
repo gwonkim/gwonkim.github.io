@@ -12,15 +12,14 @@ export const NAME = '김지원';
 export const NAME_E = 'Jiwon Kim';
 
 export const POST_CATEGORT = [
-    'all',
-    'project',
-    'git',
-    'js',
-    'react',
+    'ALL',
+    'PROJECT',
+    'GIT',
+    'JS',
+    'REACT',
     'regExp',
-    'next',
-    'bash',
-    'unix',
-    'error',
-    'etc',
+    'BASH',
+    'UNIX',
+    'ERROR',
+    'ETC',
 ];

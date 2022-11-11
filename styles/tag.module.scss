@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Anton:400,700,800");
+
 $color : rgb(92, 137, 175);
 
 .box {
@@ -22,5 +24,6 @@ $color : rgb(92, 137, 175);
 .text {
     text-align: center;
     height: 500px;
-    padding: 250px;
+    padding: auto;
+    margin-top: 200px;
 }

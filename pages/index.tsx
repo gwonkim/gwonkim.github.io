@@ -10,19 +10,18 @@ import Style from "../styles/tag.module.scss";
 import Footer from "../components/footer";
 
 type Props = {
-  preview?: boolean;
-  allPosts: Post[];
+  preview?: boolean,
+  allPosts: Post[],
 };
 
 export default function Index({ allPosts }: Props) {
-  const [ tag, setTag ] = useState<string>('all');
-
+  const [tag, setTag] = useState<string>('all');
   return (
-    <>
+    <div onContextMenu={e => e.preventDefault()} onSelect={() => {return false}}>
       <Head>
         <title>jiwon kim의 {CMS_NAME}</title>
       </Head>
-      <Layout>
+      <Layout >
         <Intro />
         {/* 페이지 설명 */}
 
@@ -32,23 +31,11 @@ export default function Index({ allPosts }: Props) {
           ))}
         </div>
         {allPosts[tag].length > 0 ? <PostView posts={allPosts[tag]} />
-      : <h3 className={Style.text}>해당 카테고리에는 게시글이 없습니다.</h3>  
-      }
-        {/*   {pin && (
-            <PinPost
-            title={pin.title}
-            coverImage={pin.coverImage}
-            date={pin.date}
-            id={pin.id}
-            excerpt={pin.excerpt}
-            />
-            )}
-          <hr />
-          <h2>게시물</h2>
-          {posts.length > 0 && <PostView posts={posts} />} */}
-          <Footer />
+          : <h3 className={Style.text}>해당 카테고리에는 게시글이 없습니다.</h3>
+        }
+        <Footer />
       </Layout>
-    </>
+    </div>
   );
 }
 

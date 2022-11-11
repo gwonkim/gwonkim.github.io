@@ -1,5 +1,5 @@
 ---
-title: "PROJECT : BLOG(버전2)"
+title: "[PROJECT] BLOG(버전2)"
 excerpt: "개인 블로그 개발 프로젝트"
 coverImage: ""
 date: "2022.09~"

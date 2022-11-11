@@ -15,7 +15,7 @@ const Pin = ({ projects }: Props) => {
   return (
     <Layout>
       <Head>
-        <script
+        <script 
           type="text/javascript"
           async
           src="//cdn.credly.com/assets/utilities/embed.js"
@@ -24,7 +24,7 @@ const Pin = ({ projects }: Props) => {
       <section className={Style.container}>
         <Resume />
         <hr className={Style.line} />
-        <h2>#프로젝트</h2>
+        <h2># 프로젝트</h2>
         {projects.length > 0 && <PostView posts={projects} />}
       </section>
       <Footer />

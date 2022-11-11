@@ -6,7 +6,7 @@ const Resume = () => {
   const lineBar = (title: string) => (
     <>
       <hr className={Style.line} />
-      <h2>#{title}</h2>
+      <h2>#&nbsp;{title}</h2>
     </>
   );
 
@@ -40,7 +40,7 @@ const Resume = () => {
         <th>학점</th>
         <th>구분</th>
         <tr>
-          <td>2019.03 ~ </td>
+          <td>2019.03 ~ 2023.02</td>
           <td>성공회대학교</td>
           <td>복수전공, 소프트웨어공학+디지털콘텐츠 전공</td>
           <td>4.26/4.5</td>
@@ -96,12 +96,12 @@ const Resume = () => {
           <td rowSpan={2}>대학알리의 회대알리 소속 기자로 활동.</td>
           <td rowSpan={2}>대학알리</td>
           <td>
-            <a href="https://univalli.com">대학알리 홈페이지</a>
+            <a href="https://univalli.com" target="_blank" rel="noreferrer">대학알리 홈페이지</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="https://www.instagram.com/skhualli">회대알리 인스타그램</a>
+            <a href="https://www.instagram.com/skhualli" target="_blank" rel="noreferrer">회대알리 인스타그램</a>
           </td>
         </tr>
         <tr>

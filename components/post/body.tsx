@@ -1,5 +1,5 @@
 import React from 'react';
-import markdownStyles from '../markdown-styles.module.css';
+import markdownStyles from '../../styles/markdown-styles.module.css';
 
 type Props = {
   content: string

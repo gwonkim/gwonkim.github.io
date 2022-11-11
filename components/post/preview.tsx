@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import DateFormatter from './date-formatter';
 import CoverImage from '../cover-image';
 import PostTitle from './title';
@@ -15,7 +16,12 @@ type Props = {
 const PostPreview = ({ title, date, excerpt, coverImage, id }: Props) => {
   return (
     <div className={Style.post}>
-      {coverImage ? <CoverImage id={id} title={title} src={coverImage} /> : <></>}
+
+      {coverImage ?
+        <Link as={`/posts/${id}`} href="/posts/[id]">
+          <CoverImage id={id} title={title} src={coverImage} />
+        </Link>
+        : <></>}
       <PostTitle id={id} link={true} >{title}</PostTitle>
       <DateFormatter dateString={date} />
       <p>{excerpt}</p>
