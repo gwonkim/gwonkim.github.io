@@ -1,5 +1,5 @@
 ---
-title: "NUTEE : 게시글 기능 구현1"
+title: "[NUTEE] 게시글 : 게시글 보기 및 스크롤"
 excerpt: "성공회대학교 교내 커뮤니티 프로젝트"
 coverImage: ""
 date: "2020.5~2022.2"
@@ -7,7 +7,7 @@ author:
   name: "김지원"
 ogImage:
   url: ""
-category: "project"
+category: "js"
 ---
 
 # 게시글 기능 구현 - 게시글 보기 및 게시글 스크롤
@@ -21,9 +21,8 @@ category: "project"
 ![게시글1](https://user-images.githubusercontent.com/62700252/201036477-9dee4a16-8029-4e27-9402-be4fff0af861.png)
 
 
-## 게시글 전체 
-## 구현 코드1 - index.js
-
+## 구현 코드1 - index.js 게시글 전체
+- \*\* 간소화로 인해 코드 중 일부 생략된 부분이 있을 수 있습니다.
 ```js
 // 게시글
 <MainContents
@@ -36,7 +35,7 @@ category: "project"
 ```
 
 ## 구현 코드2 - mainContents.js
-
+- \*\* 간소화로 인해 코드 중 일부 생략된 부분이 있을 수 있습니다.
 ```js
 
 const MainContents = ({ 
@@ -88,6 +87,8 @@ export default MainContents;
 - 스크롤을 감지한 후 추가로 게시글(hasMorePost)이 존재하고 게시글을 불러오지 않을 때(loadPostsLoading) 서버에 이후 게시글 요청
 - 검색 기능 구현 방식과 동일한 방법으로 구현 : [검색 기능 구현3 바로가기](./nutee_search3)
 
+## 구현 코드 
+- \*\* 간소화로 인해 코드 중 일부 생략된 부분이 있을 수 있습니다.
 ```js
 useEffect(() => {
   function onScroll() {

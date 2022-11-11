@@ -1,6 +1,6 @@
 ---
 
-title : 'PROJECT : NUTEE'
+title : '[PROJECT] NUTEE'
 excerpt: '성공회대학교 교내 커뮤니티 프로젝트'
 coverImage: ''
 date: '2020.5~2022.2'
@@ -70,11 +70,17 @@ category: 'project'
   - [구현1 : 게시글 보기 & 스크롤 시 게시글 데이터 추가 요청](./nutee_post1)
   - [구현2 : 게시글 작성](./nutee_post2)
   - [구현2 : 게시글 해시태그 & URL](./nutee_post3)
+
 - 검색
   - [구현1 : 검색 네이비게이션바](./nutee_search1)
   - [구현2 : 검색창 & 검색 기록](./nutee_search2)
   - [구현3 : 스크롤 시 검색 데이터 추가 요청](./nutee_search3)
+
 - 설정
+  - [구현1 : 프로필사진 변경](./nutee_setting1)
+  - [구현2 : 닉네임 & 비밀번호 변경](./nutee_setting2)
+  - [구현3 : 카테고리 & 전공 변경](./nutee_setting3)
+
 - 디자인
   - [페이지별 구현 모습](./nutee_img)
 

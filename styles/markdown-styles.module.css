@@ -61,6 +61,10 @@
   padding: 5px
 }
 
+.markdown hr {
+  margin: 100px 0;
+}
+
 /* CODE */
 .markdown pre {
   border-radius: 15px;

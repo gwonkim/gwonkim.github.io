@@ -1,5 +1,5 @@
 ---
-title: "NUTEE : 게시글 기능 구현2"
+title: "[NUTEE] 게시글 : 게시글 작성"
 excerpt: "성공회대학교 교내 커뮤니티 프로젝트"
 coverImage: ""
 date: "2020.5~2022.2"
@@ -7,7 +7,7 @@ author:
   name: "김지원"
 ogImage:
   url: ""
-category: "project"
+category: "js"
 ---
 
 # 게시글 기능 구현 - 게시글 작성
@@ -18,6 +18,7 @@ category: "project"
 
 
 ## 구현 코드 - postForm.js
+- \*\* 간소화로 인해 코드 중 일부 생략된 부분이 있을 수 있습니다.
 ```js
 const PostForm = () => {
   const dispatch = useDispatch();

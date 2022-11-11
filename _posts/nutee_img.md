@@ -1,5 +1,5 @@
 ---
-title : 'NUTEE : 구현 모습'
+title : '[NUTEE] 구현 모습'
 excerpt: '성공회대학교 교내 커뮤니티 프로젝트'
 coverImage: ''
 date: '2020.5~2022.2'
@@ -7,7 +7,7 @@ author:
   name: '김지원'
 ogImage:
   url: ''
-category: 'project'
+category: 'js'
 ---
 
 # 페이지 별 플로우 차트
