@@ -18,8 +18,10 @@ const Gwonkim = ({ Component, props }) => (
       />
       <meta name="description" content="jiwon의 gitblog" />
       <meta name="og:title" content="gwonkim" />
-      <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400" rel="stylesheet"></link>
-      <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400,700,800" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css?family=Anton:400,700,800" rel="stylesheet"></link>
     </Head>
     <Component {...props} />
   </>
