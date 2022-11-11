@@ -51,10 +51,6 @@ export function getCategoryPost(fields: string[] = []) {
   const ids = getPostIds();
   const CATEGORT: any = {};
   const posts = ids.map((id) => getPostById(id, fields)).filter(v => v.title !== 'pin').sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  
-  POST_CATEGORT.map((c) => {
-    CATEGORT[c] = posts.map((v: any) => v.category === c && v.category !== 'pin')
-  })
 
   POST_CATEGORT.map((c) => {
     CATEGORT[c] = [];
@@ -64,7 +60,7 @@ export function getCategoryPost(fields: string[] = []) {
       }
     })
   })
+  CATEGORT['ALL'] = posts;
 
-  CATEGORT['all'] = posts;
   return CATEGORT;
 };

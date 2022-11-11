@@ -15,16 +15,20 @@ type Props = {
 };
 
 export default function Index({ allPosts }: Props) {
-  const [tag, setTag] = useState<string>('all');
+  const [tag, setTag] = useState<string>('ALL');
+
   return (
-    <div onContextMenu={e => e.preventDefault()} onSelect={() => {return false}}>
+    <div onContextMenu={e => e.preventDefault()} onSelect={() => { return false }}>
       <Head>
         <title>jiwon kim의 {CMS_NAME}</title>
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans:400,700,800" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Anton:400,700,800" rel="stylesheet"></link>
       </Head>
       <Layout >
         <Intro />
         {/* 페이지 설명 */}
-
         <div className={Style.box}>
           {POST_CATEGORT.map((category, i) => (
             <span onClick={() => setTag(category)} key={i}>{category}</span>

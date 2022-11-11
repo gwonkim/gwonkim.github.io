@@ -17,7 +17,7 @@ export const POST_CATEGORT = [
     'GIT',
     'JS',
     'REACT',
-    'regExp',
+    /* 'regExp', */
     'BASH',
     'UNIX',
     'ERROR',
