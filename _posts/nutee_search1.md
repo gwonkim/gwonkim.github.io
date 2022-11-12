@@ -67,9 +67,8 @@ export default NavigationBar;;
 ![search](https://user-images.githubusercontent.com/62700252/200836444-4c5053b2-3526-4064-8ec5-df72d682d779.png)
 
 ## 구현 코드 - Search.js
-
-```js
 - \*\* 간소화로 인해 코드 중 일부 생략된 부분이 있을 수 있습니다.
+```js
 const Search = ({ onCloseSearch }) => {
 
   ...
