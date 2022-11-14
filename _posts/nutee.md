@@ -69,7 +69,7 @@ category: 'project'
 - 게시글
   - [구현1 : 게시글 보기 & 스크롤 시 게시글 데이터 추가 요청](./nutee_post1)
   - [구현2 : 게시글 작성](./nutee_post2)
-  - [구현2 : 게시글 해시태그 & URL](./nutee_post3)
+  - [구현3 : 게시글 해시태그 & URL](./nutee_post3)
 
 - 검색
   - [구현1 : 검색 네이비게이션바](./nutee_search1)
