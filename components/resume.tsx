@@ -21,7 +21,7 @@ const Resume = () => {
         </tr>
         <tr>
           <th>이메일</th>
-          <td colSpan={3}>{EMAIL}</td>
+          <td className={Style.drag} colSpan={3}>{EMAIL}</td>
         </tr>
         <tr>
           <th>깃허브</th>
