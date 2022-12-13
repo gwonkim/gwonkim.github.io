@@ -1,7 +1,7 @@
 ---
 title: '[에러] React: CSS Error'
 coverImage: "/assets/blog/image/css.png"
-date: '2020'
+date: '2020.08.15'
 author:
   name: '김지원'
 ogImage:

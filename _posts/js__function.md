@@ -1,6 +1,6 @@
 ---
 title: '[JS] Function'
-date: '2021'
+date: '2021.09.10'
 author:
   name: '김지원'
 category: 'js'

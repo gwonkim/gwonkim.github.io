@@ -1,7 +1,7 @@
 ---
-title: '[unix] 기본 명령어'
+title: '[unix] 기초 명령어'
 coverImage: ''
-date: '2021'
+date: '2021.12.13'
 author:
   name: '김지원'
 ogImage:
@@ -9,26 +9,82 @@ ogImage:
 category: 'unix'
 ---
 
-# 유닉스 기본 명령어
+# 유닉스 기초 명령어
+- 경로명 / 명령어 / 와일드카드
 
-## 표준 입력과 표준 출력
-- java와 같은 언어에서 입력을 받을 때
-  - System.in 객체를 이용하고, 출력할 때 System.out 객체를 사용
-- ex) System.out.print("Hello World!");
-- 이 입력과 출력을 표준 입력, 표준 출력이라고 함.
+---------
 
-## Redirection
-- &lt; or &gt;
-  - 표준 입력과 표준 출력의 방향을 변경 가능.
-  - ex) ls > list.txt
-  - ls 명령의 출력이 화면으로 출력되지 않고 list.txt 파일에 저장.
-  - (list.txt 파일이 존재한다면 덮어쓰고 없으면 새로 생성.)
+# 경로명
++ 디렉토리 = 폴더(운영체제에 따른 용어 다름, 윈도우 리눅스)
+- 디렉토리 구분 문자
+    - /
+    - ex) ~/documents/text(홈디렉토리의 문서 폴더의 text 디렉토리로 이동)
 
-## Pipe( | )
-- 이전 명령의 출력이 그 다음 명령의 입력으로 파이프처럼 연결.
-- 입출력 연결하는 것 pipe
-- ex) ls -l | gzip > list.txt.gz
-- ls -l 명령의 출력을 gzip의 입력으로 넘겨 압축한 출력 데이터를 list.txt.gz에 저장
+- 절대 경로
+    - 경로명이 /문자로 시작된 경로
+    - ex) rm /test/name.java
+        - (루트 디렉토리 아래의 test 디렉토리 아래에 있는 name.java 파일 삭제) 
 
-## [Filter](./unix__filter)
-- 파이트 방식으로 연결해 사용하는 것이 주 목적인 명령
+- 상대경로
+    - 경로명이 /문자로 시작하지 않는 경로
+    - ex) rm test/name.java
+        - (현재 디렉토리에서 text 디렉토리 아래에 있는 name.java 파일 사작)
+
+- 부모 디렉토리(상위 디렉토리)
+    - ..
+    - ex) rm ../test/col.js
+        - (상위 or 부모 디렉토리로 이동해 test 디렉토리에 있는 col.js 파일 삭제 )
+
+- 현재 디렉토리
+    - .
+    - ex) rm ./test.c
+        - (현재 디렉토리의 test.c 파일 삭제)
+
+- 홈 디렉토리
+    - ~
+    - ex) rm ~/text.txt
+        - (홈 디렉토리에 있는 text.txt 파일 삭제)
+
+
+# 명령어
+## pwd
+현재 위치한 디렉토리 출력
+
+## cd
+change directory(디렉토리 이동)
+
+## mkdir
+make directory
+
+## rmdir
+remove directory
+
+## rm
+remove
+
+## mv
+move
+
+## cp
+copy
+
+## ls
+list(현재 디렉토리의 파일과 서브 디렉토리에 대한 리스트 출력)
+
+## cat
+concatenate(파일 내용 화면에 출력)
+
+## clear
+화면 내용 지우기
+
+
+# 와일드 카드(Wild Card)
+- *정규식과는 조금 다름
+## *
+어떤 문자열과도 일치(빈 문자열 포함)
+
+## ?
+어떤 한 문자와 일치
+
+## [abc]
+a문자 b문자 c문자 중 한 문자와 일치

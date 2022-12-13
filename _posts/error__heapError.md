@@ -1,7 +1,7 @@
 ---
 title: '[에러] JavaScript_heap_out_of_memory'
 coverImage: ''
-date: '2020'
+date: '2020.09.10'
 author:
   name: '김지원'
 ogImage:

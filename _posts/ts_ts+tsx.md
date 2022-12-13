@@ -1,7 +1,7 @@
 ---
 title: '[TS] .ts와 .tsx의 차이'
 coverImage: ''
-date: '2022.10'
+date: '2022.10.10'
 author:
   name: '김지원'
 ogImage:

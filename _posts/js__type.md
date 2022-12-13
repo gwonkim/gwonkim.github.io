@@ -1,7 +1,7 @@
 ---
 title: '[JS] Type'
 coverImage: ''
-date: '2021'
+date: '2021.01.13'
 author:
   name: '김지원'
 ogImage:

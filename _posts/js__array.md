@@ -1,6 +1,6 @@
 ---
 title: '[JS] Array'
-date: '2021'
+date: '2021.10.21'
 author:
   name: '김지원'
 category: 'js'

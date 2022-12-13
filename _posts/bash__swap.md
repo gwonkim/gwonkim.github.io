@@ -1,7 +1,7 @@
 ---
 title: '[bash] SWAP'
 coverImage: ''
-date: '2021'
+date: '2021.12.29'
 author:
   name: '김지원'
 ogImage:

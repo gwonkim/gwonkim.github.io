@@ -1,7 +1,7 @@
 ---
 title: '[에러] getStaticProps props undefined'
 coverImage: ''
-date: '2022.04'
+date: '2022.04.07'
 author:
   name: '김지원'
 ogImage:

@@ -2,7 +2,7 @@
 title: "[에러] Uncaught TypeError: Cannot read properties of null (reading 'style')"
 excerpt: "java | spring | error"
 coverImage: '/assets/blog/image/jsNull.jpg'
-date: "2022.10"
+date: "2022.10.30"
 author:
   name: "김지원"
 ogImage:

@@ -1,6 +1,6 @@
 ---
 title: '[Git] Branch'
-date: '2021'
+date: '2021.10.02'
 author:
   name: '김지원'
 ogImage:

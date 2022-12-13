@@ -1,6 +1,6 @@
 ---
 title: '[JS] slice&splice'
-date: '2021'
+date: '2022.02.06'
 author:
   name: '김지원'
 category: 'js'

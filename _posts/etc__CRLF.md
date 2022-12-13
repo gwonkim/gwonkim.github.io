@@ -1,7 +1,7 @@
 ---
 title: 'CRLF'
 coverImage: ''
-date: '2021'
+date: '2021.01.21'
 author:
   name: '김지원'
 ogImage:

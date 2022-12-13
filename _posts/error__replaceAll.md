@@ -1,7 +1,7 @@
 ---
 title: '[에러] replaceAll is not a function'
 coverImage: '/assets/blog/image/replaceAll_node.jpg'
-date: '2022.10'
+date: '2022.10.11'
 author:
   name: '김지원'
 ogImage:

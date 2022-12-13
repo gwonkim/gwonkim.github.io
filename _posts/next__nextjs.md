@@ -1,7 +1,7 @@
 ---
 title: '[NEXT] NEXT.js'
 coverImage: ''
-date: '2021'
+date: '2021.12.30'
 author:
   name: '김지원'
 ogImage:

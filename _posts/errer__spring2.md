@@ -2,7 +2,7 @@
 title: "[에러] form 데이터가 넘어올 때 일부 데이터 소실"
 excerpt: "java | spring | error"
 coverImage: ""
-date: "2022.10"
+date: "2022.10.15"
 author:
   name: "김지원"
 ogImage:

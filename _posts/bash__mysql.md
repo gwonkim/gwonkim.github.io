@@ -1,7 +1,7 @@
 ---
 title: '[bash] MySQL'
 coverImage: ''
-date: '2021'
+date: '2021.12.28'
 author:
   name: '김지원'
 ogImage:

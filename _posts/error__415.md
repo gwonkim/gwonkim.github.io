@@ -1,7 +1,7 @@
 ---
 title: '[에러] Http Status 415'
 coverImage: '/assets/blog/image/415.png'
-date: '2020'
+date: '2021.07.28'
 author:
   name: '김지원'
 ogImage:

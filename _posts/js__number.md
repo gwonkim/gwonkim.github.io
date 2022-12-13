@@ -1,6 +1,6 @@
 ---
 title: '[JS] Number'
-date: '2021'
+date: '2021.11.01'
 author:
   name: '김지원'
 category: 'js'

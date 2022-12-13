@@ -1,7 +1,7 @@
 ---
 title: '[Mini Game] color block'
 coverImage: ''
-date: '2022.03'
+date: '2022.03.29'
 author:
   name: '김지원'
 ogImage:

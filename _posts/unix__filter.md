@@ -1,7 +1,7 @@
 ---
 title: '[unix] Filter'
 coverImage: ''
-date: '2021'
+date: '2022.01.27'
 author:
   name: '김지원'
 ogImage:

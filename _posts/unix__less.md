@@ -1,7 +1,7 @@
 ---
 title: '[unix] Less'
 coverImage: ''
-date: '2021'
+date: '2021.10'
 author:
   name: '김지원'
 ogImage:

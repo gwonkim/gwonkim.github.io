@@ -1,7 +1,7 @@
 ---
 title: 'Polyfill'
 coverImage: ''
-date: '2021'
+date: '2022.02.17'
 author:
   name: '김지원'
 ogImage:

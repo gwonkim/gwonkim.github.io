@@ -1,6 +1,6 @@
 ---
 title: '[JS] npm'
-coverImage: ''
+coverImage: '2021.11.10'
 date: '2021'
 author:
   name: '김지원'

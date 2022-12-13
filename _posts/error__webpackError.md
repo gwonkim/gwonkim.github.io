@@ -1,7 +1,7 @@
 ---
 title: "[에러] TypeError: Cannot read property 'tap' of undefined"
 coverImage: "/assets/blog/image/typeError.png"
-date: '2020'
+date: '2020.12.22'
 author:
   name: '김지원'
 ogImage:

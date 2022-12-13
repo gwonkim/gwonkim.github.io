@@ -1,7 +1,7 @@
 ---
 title: 'OGTag'
 coverImage: ''
-date: '2021'
+date: '2021.07.24'
 author:
   name: '김지원'
 ogImage:

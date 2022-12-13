@@ -1,6 +1,6 @@
 ---
 title: '[JS] import&require'
-date: '2021'
+date: '2021.10.1'
 author:
   name: '김지원'
 category: 'js'

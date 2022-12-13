@@ -2,7 +2,7 @@
 title: "[에러] Neither BindingResult nor plain target object for bean name ' available as request attribute"
 excerpt: "java | spring | error"
 coverImage: ""
-date: "2022.11"
+date: "2022.10.14"
 author:
   name: "김지원"
 ogImage:

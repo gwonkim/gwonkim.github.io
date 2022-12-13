@@ -9,7 +9,6 @@ ogImage:
 category: 'react'
 ---
 
-
 # prop-types
 - 리액트에서 prop-types 사용하는 법
 - react hooks에서 사용하는 법

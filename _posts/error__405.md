@@ -1,7 +1,7 @@
 ---
 title: '[에러] Http Status 405'
 coverImage: ''
-date: '2020'
+date: '2021.08.08'
 author:
   name: '김지원'
 ogImage:
