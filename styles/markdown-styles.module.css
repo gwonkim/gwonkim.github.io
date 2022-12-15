@@ -65,6 +65,11 @@
   margin: 100px 0;
 }
 
+.markdown a {
+  color: #3370cb;
+  text-decoration: underline;
+}
+
 /* CODE */
 .markdown pre {
   border-radius: 15px;
