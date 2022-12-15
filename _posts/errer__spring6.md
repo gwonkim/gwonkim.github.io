@@ -1,12 +1,12 @@
 ---
 title: "[에러] Error Code: 1452. Cannot add or update a child row: a foreign key constraint fails"
 excerpt: "java | spring | DB(mySql) | error"
-coverImage: "/assets/blog/image/bookRe.jpg"
+coverImage: "/assets/blog/image/dbFK.jpg"
 date: "2022.11.21"
 author:
   name: "김지원"
 ogImage:
-  url: "/assets/blog/image/bookRe.jpg"
+  url: "/assets/blog/image/dbFK.jpg"
 category: "errer"
 ---
 

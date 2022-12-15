@@ -14,7 +14,7 @@ category: "errer"
 
 - 검색 기능 구현 중 검색 키워드로 '하'를 적은 후 리턴했을 때 발생
 
-![화면 캡처 2022-11-19 015913](https://user-images.githubusercontent.com/62700252/203469121-4baab203-fae9-4175-89a3-59a7ceeb307b.jpg)
+![bookRe_img](https://user-images.githubusercontent.com/62700252/203469121-4baab203-fae9-4175-89a3-59a7ceeb307b.jpg)
 
 # 원인
 
