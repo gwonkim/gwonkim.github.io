@@ -2,12 +2,12 @@
 
 title : '[PROJECT] NUTEE'
 excerpt: '성공회대학교 교내 커뮤니티 프로젝트'
-coverImage: ''
+coverImage: "/assets/project/icon_nutee.png"
 date: '2020.5~2022.2'
 author:
   name: '김지원'
 ogImage:
-  url: ''
+  url: "/assets/project/icon_nutee.png"
 category: 'project'
 ---
 
@@ -60,9 +60,7 @@ category: 'project'
 - antd
 
 ## 전체 기능 중 담당한 파트 설명
-**+ 클릭 시 페이지로 이동됩니다.**
 <!-- - 로그인과 회원가입
-- 설정(개인정보 수정)
 - [사용자 페이지](./nutee_userpost)
 - [카테고리 기능](./nutee_category) -->
 
