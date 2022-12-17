@@ -83,6 +83,23 @@ const Resume = () => {
         </tr>
       </table>
 
+      {lineBar("수상 내역")}
+      <table>
+        <th>수상일</th>
+        <th>수상명</th>
+        <th>수여기관</th>
+        <tr>
+          <td>2020.11</td>
+          <td>IT&미디어콘텐츠 경진대회 장려상</td>
+          <td>성공회대학교</td>
+        </tr>
+        <tr>
+          <td>2019.12</td>
+          <td>글쓰기대회 나눔상</td>
+          <td>성공회대학교</td>
+        </tr>
+      </table>
+
       {lineBar("대외활동 및 교육 이수")}
       <table>
         <th>기간</th>
