@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>사진 연도 맞추기 게임</title>
+    <style>
+      @font-face {
+        font-family: "Pretendard";
+        src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff") format("woff");
+        font-weight: 400;
+        font-style: normal;
+      }
+      body {
+        font-family: Pretendard;
+        text-align: center;
+        background-color: #333;
+        margin: 0;
+      }
+      #photo {
+        width: 250px;
+        height: auto;
+      }
+      #button-container button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      #photo-text {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #fff;
+        word-break: keep-all;
+        font-weight: bold;
+      }
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+        20% {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+        80% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(0.8);
+        }
+      }
+      #result {
+        font-size: 30px;
+      }
+      #result.correct,
+      #result.wrong {
+        background-color: rgba(0, 0, 0, 0.45);
+        height: 120vh;
+        position: absolute;
+        top: -10%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #result.correct {
+        color: green;
+        font-weight: bold;
+        animation: fadeInOut 1s ease-in-out;
+      }
+      #result.wrong {
+        color: red;
+        font-weight: bold;
+        animation: fadeInOut 1s ease-in-out;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        justify-content: center;
+      }
+      #game-area {
+        display: none;
+      }
+
+      .shadow-dance-text {
+        font-size: 50px;
+        color: #fff;
+        margin-bottom: 10px;
+        text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+        animation: shadow-dance 2s infinite;
+      }
+
+      @keyframes shadow-dance {
+        0%,
+        100% {
+          text-shadow: 5px 5px 0 #ff005e, 10px 10px 0 #00d4ff;
+        }
+        50% {
+          text-shadow: -5px -5px 0 #00d4ff, -10px -10px 0 #ff005e;
+        }
+      }
+
+      .masked-text {
+        margin-top: 0px;
+        font-size: 50px;
+        font-weight: bold;
+        color: transparent;
+        background-image: url("./img/8.jpeg");
+        background-size: 40%;
+        background-position: 0% 50%;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: animate-background 4s infinite alternate linear;
+      }
+
+      @keyframes animate-background {
+        0% {
+          background-position: 0 50%;
+        }
+        100% {
+          background-position: 100% 50%;
+        }
+      }
+
+      .wave-text span {
+        cursor: pointer;
+        font-weight: 700;
+        display: inline-block;
+        font-size: 50px;
+        animation: wave 2s ease-in-out infinite;
+      }
+
+      .wave-text span:nth-child(1) {
+        color: #ff005e;
+        animation-delay: 0s;
+      }
+      .wave-text span:nth-child(2) {
+        color: #00d4ff;
+        animation-delay: 0.2s;
+      }
+      .wave-text span:nth-child(3) {
+        color: #00ff11;
+        animation-delay: 0.4s;
+      }
+      .wave-text span:nth-child(4) {
+        color: #dd00ff;
+        animation-delay: 0.6s;
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+      #start-button {
+        margin-top: 50%;
+      }
+      #stage-title {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title-container">
+      <div class="shadow-dance-container">
+        <h1 class="shadow-dance-text">두근두근</h1>
+      </div>
+      <div class="masking-container">
+        <h1 class="masked-text">맞춰라 장하랑</h1>
+      </div>
+      <div class="wave-container">
+        <p id="start-button" class="wave-text"><span>게</span><span>임</span><span>시</span><span>작</span></p>
+      </div>
+    </div>
+
+    <div id="game-area">
+      <h2 id="stage-title">1/5</h2>
+      <img id="photo" src="" alt="사진" />
+      <p id="photo-text"></p>
+      <div id="button-container"></div>
+      <div id="result"></div>
+    </div>
+
+    <script>
+      const photos = [
+        { src: "/img/1.jpeg", year: 2024, list: [2022, 2023, 2024], text: "행복한 미소와 함께 V쌍븨이V를 한 연도는 언제일까요?" }, // 2024.9.15
+        { src: "/img/2.jpeg", year: 2024, list: [2022, 2021, 2023, 2024], text: "장하랑은 평화롭게 영상을 시청하고 있습니다.몇 연도 장하랑일까요?" }, // 2024.7.28
+        { src: "/img/3.jpeg", year: 2023, list: [2022, 2021, 2023, 2024], text: "열심히 무언가를 찍고 있습니다. 이것은 언제일까요?" }, // 2023.10.29
+        { src: "/img/4.jpeg", year: 2023, list: [2022, 2021, 2023, 2020], text: "장하랑이 앞머리를 잘랐다면서 븨이V 사진을 보냈습니다.이건 언제일까요?" }, // 2023.10.3
+        { src: "/img/5.jpeg", year: 2023, list: [2022, 2021, 2023, 2024], text: "한가롭게 커피를 먹고 있는 장하랑은 몇년도일까요?" }, // 2023.8.13
+        { src: "/img/6.jpeg", year: 2023, list: [2022, 2021, 2023, 2020], text: "어느 날 장하랑이 눈물을 흘렸다면서 김지원에게 사진을 보냈습니다. 사진을 보낸 연도는 언제일까요?" }, // 2023.2.13
+        { src: "/img/7.jpeg", year: 2022, list: [2022, 2021], text: "한 가게에서 음식 사진을 찍은 장하랑은 인스타에 스토리를 올리고 있습니다. 언제일까요?" }, // 2022.10.11
+        { src: "/img/8.jpeg", year: 2021, list: [2019, 2021, 2020], text: "한가로운 어느 날입니다. 이때는 언제일까요?" }, // 2021.8.6
+        { src: "/img/9.jpeg", year: 2017, list: [2016, 2018, 2017], text: "튼실하고 풍성한 모발을 자랑하고 있습니다. 언제일까요?" }, // 2017.10.28
+        { src: "/img/10.jpeg", year: 2018, list: [2016, 2018, 2017], text: "한 여름, 장하랑은 풍선 인형 옆에서 V븨이를 하고 있네요. 언제일까요?" }, // 2018.8.9
+        { src: "/img/11.jpeg", year: 2018, list: [2016, 2018, 2017, 2019], text: "역동적으로 게임을 하고 있습니다. 언제일까요?" }, // 2018.12.17
+        { src: "/img/12.jpeg", year: 2018, list: [2016, 2018, 2017], text: "사람은 곡선으로 이루어져 있습니다. 곡선미를 자랑하는 장하랑은 몇년도 장하랑일까요?" }, // 2018.12.19
+        { src: "/img/13.jpeg", year: 2020, list: [2022, 2021, 2019, 2020], text: "평화롭게 침대에 누워 폰을 보고 있네요. 침대에 누워있는 장하랑은 몇 년도일까요?" }, // 2020.2.19
+        { src: "/img/14.jpeg", year: 2021, list: [2022, 2021, 2019, 2020], text: "오늘도 언제나 부족한 눈썹을 채우고 있는 장하랑! 기분이 좋은지 브이V를 하고 있네요~ 이때는 언제일까요?" }, // 2021.6.24
+        { src: "/img/15.jpeg", year: 2021, list: [2019, 2021, 2020], text: "한적한 카페에서 마스크를 쓰고 있는 장하랑은 몇 년도일까요?" }, // 2021.8.26
+        { src: "/img/16.jpeg", year: 2021, list: [2022, 2021, 2023, 2020], text: "해맑게 OK를 하고 있는 장하랑은 언제쯤일까요?" }, // 2021.8.30
+        { src: "/img/17.jpeg", year: 2021, list: [2022, 2021, 2023, 2020], text: "침대에 누운 장하랑은 깊은 감명을 받았는지 고뇌에 빠져있습니다. 언제일까요?" }, // 2021.12.23
+        { src: "/img/18.jpeg", year: 2022, list: [2022, 2021, 2023], text: "열심히 필름을 붙이고 있는 장하랑은 언제일까요?" }, // 2022.1.22
+        { src: "/img/19.jpeg", year: 2022, list: [2022, 2021, 2019, 2020], text: "오늘 착장이 마음에 들었는지 거울 셀카를 찍네요. 언제일까요?" }, // 2022.5.14
+        { src: "/img/20.jpeg", year: 2022, list: [2022, 2021, 2023, 2020], text: "카페에서 무언가 집중하고 있습니다. 이때는 언제일까요?" }, // 2022.5.15
+        { src: "/img/21.jpeg", year: 2022, list: [2022, 2023, 2024], text: "인스타에 사진을 올린다고 김지원이 도촬하는지도 모릅니다. 이때는 언제일까요?" }, // 2022.8.22
+      ];
+
+      let current = 0;
+      let stage = 1;
+      let shuffled = [];
+
+      function shuffle(arr) {
+        const newArr = [...arr];
+        for (let i = newArr.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+        }
+        return newArr;
+      }
+
+      document.getElementById("start-button").addEventListener("click", () => {
+        document.getElementById("start-button").style.display = "none";
+        document.getElementById("game-area").style.display = "block";
+        startGame();
+      });
+
+      function startGame() {
+        shuffled = shuffle(photos).slice(0, photos.length);
+        current = 0;
+        stage = 1;
+        loadQuestion();
+      }
+
+      function loadQuestion() {
+        const stageTitle = document.getElementById("stage-title");
+        const photo = document.getElementById("photo");
+        const photoText = document.getElementById("photo-text");
+        const buttonContainer = document.getElementById("button-container");
+        const result = document.getElementById("result");
+
+        const currentPhoto = shuffled[current];
+
+        stageTitle.textContent = `${stage}/${photos.length}단계`;
+        photo.src = currentPhoto.src;
+        photoText.textContent = currentPhoto.text;
+
+        buttonContainer.innerHTML = "";
+        result.textContent = "";
+        result.className = "";
+
+        currentPhoto.list.forEach((year) => {
+          const btn = document.createElement("button");
+          btn.textContent = year;
+          btn.onclick = () => checkAnswer(year);
+          buttonContainer.appendChild(btn);
+        });
+      }
+
+      function checkAnswer(selectedYear) {
+        const result = document.getElementById("result");
+        const correctYear = shuffled[current].year;
+
+        const img = document.createElement("img");
+        img.style.width = "400px"; // 원하는 사이즈로 조정
+
+        if (selectedYear === correctYear) {
+          img.alt = "딩동댕~ 정답!";
+          img.src = "./img/correct.png";
+          result.appendChild(img);
+          result.className = "correct";
+        } else {
+          img.alt = "땡!";
+          img.src = "./img/gameover.png";
+          const p = document.createElement("p");
+          p.textContent = "땡! 처음부터 다시 시작";
+          result.appendChild(img);
+          result.appendChild(p);
+          result.className = "wrong";
+          current = 0;
+          stage = 0;
+          shuffled = shuffle(photos).slice(0, photos.length);
+        }
+
+        setTimeout(() => {
+          current++;
+          stage++;
+          if (current >= photos.length) {
+            document.getElementById("stage-title").textContent = "";
+            document.getElementById("photo").src = "";
+            document.getElementById("photo-text").textContent = "";
+            document.getElementById("button-container").innerHTML = "";
+            result.textContent = "게임이 끝났어요! 다시 하시겠어요?";
+            result.className = "";
+            const retryBtn = document.createElement("button");
+            retryBtn.textContent = "다시 시작하기";
+            retryBtn.onclick = () => {
+              document.getElementById("game-area").style.display = "block";
+              startGame();
+            };
+            document.getElementById("button-container").appendChild(retryBtn);
+          } else {
+            loadQuestion();
+          }
+        }, 1200);
+      }
+    </script>
+  </body>
+</html>
